@@ -1,6 +1,6 @@
 {
-  "homepage": "http://nicholasburgher.github.io/uxuidesign",
-  "name": "uxuidesigner-portfolio",
+  "homepage": "http://nicholasburgher.github.io/designer",
+  "name": "design-portfolio",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
