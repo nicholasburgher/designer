@@ -7,12 +7,15 @@
   box-sizing: border-box;
   font-family: 'Inter', sans-serif;
 }
-
+// BFD4DA
 body {
-  background: $theme_accent;
+  background: #BFD4DA;
+  height: 100vh;
 
   .App {
     color: $theme_background;
+    background: $theme_accent;
+    min-height: 100vh;
   }
 }
 
@@ -46,7 +49,7 @@ h3 {
 }
 
 .content {
-  padding: 64px 24px 0;
+  padding: 64px $marginH 0;
 }
 
 .cover-page {
@@ -71,6 +74,7 @@ h3 {
 //Articles
 .article-content {
   color: $theme_primary;
+  color: $theme_background;
   h2 {
     text-transform: none;
     font-weight: 600;
@@ -78,13 +82,92 @@ h3 {
     text-align: center;
     padding-bottom: $base_unit;
   }
+  h3, h4, p, ol, ul, .combination-block {
+    max-width: 700px;
+    margin: 0 auto;
+    padding-top: $base_unit;
+  }
+  h3 {
+    color: inherit;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    padding-top: calc(#{$base_unit} * 2.5);
+  }
+  h4 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    letter-spacing: 0.01em;
+    padding-top: calc(#{$base_unit} * 2);
+  }
   p {
-    background: rgba($theme_background, 0.5);
-    padding: $base_unit;
+    //background: rgba($theme_background, 0.5);
+    margin-bottom: $base_unit;
+    line-height: 135%;
+    &.centered {
+      text-align: center;
+    }
+    &.caption {
+      font-size: smaller;
+      font-style: italic;
+      color: rgba($theme_background,0.7);
+    }
+  }
+  ul, ol {
+    padding-left: $base_unit;
+    line-height: calc(#{$base_unit} * 1.25);
     margin-bottom: $base_unit;
   }
 }
-
+/*  FOOTER  */
+.footer {
+  margin: calc(#{$base_unit} * 2) calc(#{$marginH} * -1) 0;
+  min-height: 192px;
+  background: #5d5d5d;
+  padding: 36px 48px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: calc(#{$base_unit} * 2);
+  .footer-section {
+    display: flex;
+    gap: $base_unit;
+    flex-direction: column;
+    align-items: center;
+    font-size: $base_unit;
+    .footer_title {
+      font-weight: 400;
+      font-size: 24px;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+    }
+    .social, .copyright {
+      width: 156px;
+      display: flex;
+      align-items: center;
+    }
+    .social {
+      justify-content: space-between;
+    }
+    .copyright {
+      justify-content: center;
+    }
+  }
+}
+@media only screen and (min-width: 568px) {
+  .footer {
+    //flex-direction: row;
+    //justify-content: flex-end;
+    align-items: flex-end;
+    gap: $base_unit;
+    .footer-section {
+      flex-direction: row;
+      .copyright {
+        justify-content: flex-end;
+      }
+    }
+  }
+}
 @media only screen and (min-width: 768px) {
   .cover-page {
     h1 {

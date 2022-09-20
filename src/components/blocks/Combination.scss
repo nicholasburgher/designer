@@ -1,0 +1,24 @@
+.combination-block {
+    display: grid;
+    //max-width set in App.scss
+    margin: 0 auto;
+    align-items: center;
+    gap: 1rem;
+    grid-template-columns: 1fr 1fr;
+    &[class*='two-thirds'] {
+        //background: red;
+        grid-template-columns: 2fr 1fr;
+    }
+    &[class*='one-third'] {
+        //background: red;
+        grid-template-columns: 1fr 2fr;
+    }
+    &[class*='image'] {
+        div.image-group {
+            order: -1;
+        }
+    }
+    img {
+        border-radius: 6px;
+    }
+}

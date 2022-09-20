@@ -1,0 +1,11 @@
+.image {
+    border-radius: 6px;
+    display: block;
+    margin: 0 auto;
+    padding: 1rem 0;
+    max-width: 700px;
+    width: 100%;
+    &.smaller {
+        padding: 5% 16%;
+    }
+}

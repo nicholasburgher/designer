@@ -1,0 +1,20 @@
+@import "../../cssVariables.scss";
+
+.gallery {
+    &.masonry {
+        display: flex;
+        flex-flow: row wrap;
+        //flex-direction: column;
+        gap: 1rem;
+        width: 100%;
+        .image-group {
+            width: calc((100% - 2rem - 1px)/3);
+            img {
+                width: 100%;
+            }
+            p.caption {
+                text-align: center;
+            }
+        }
+    }
+}

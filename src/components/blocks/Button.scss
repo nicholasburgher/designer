@@ -1,0 +1,12 @@
+@import "../../cssVariables.scss";
+
+div.button-1 {
+    display: grid;
+    place-items: center;
+    button {
+        background: grey;
+        border: none;
+        padding: 8px 12px;
+        color: $theme_background;
+    }
+}
