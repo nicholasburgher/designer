@@ -268,13 +268,60 @@ const work = [
         "content": "Email Funnel"
       },
       {
+        "component": "Body",
+        "content": "Upon finishing the quiz questions, users were required to give an email to see their quiz results. We used Mailchimp's customer journeys to set up triggered automations that send 2 or 3 email touchpoints to engage individuals who took the quiz. Based on the user's awarded persona, they would receive different followup emails."
+      },
+      {
+        "component": "Image",
+        "source": "quiz/design-details/results-screen.jpg",
+        "alt" :"results screen"
+      },
+      {
         "component": "Subheading",
         "content": "Development"
       },
       {
+        "component": "Body",
+        "content": "I'd like to take a minute to highlight just a few of the development items I worked through when building this tool. The first item is <u>calculating</u> the quiz results."
+      },
+      {
+        "component": "Image",
+        "source": "quiz/design-details/calculate.jpg",
+        "alt": "image or code used for calculating"
+      },
+      {
+        "component": "Body",
+        "content": "In short, I wrote a script that runs on the final page of the quiz. What it does is read the results (r) from each of the 7 questions the user submitted and adjust the scores for each of the personas based on their answer. Which ever is highest will then be selected as their persona assignment."
+      },
+      {
+        "component": "Body",
+        "content": "This isn't a highly technical or serious program, so it was important not to overthink the calculations and just let it run. That said, I did have to consider how the user's answer might effect their outcome. For that reason, I spent some time working on refining those calculations until it made the most sense."
+      },
+      {
+        "component": "Body",
+        "content": "Lastly, I had to spend some serious time working through implementing a email submission wall. Because some of the code comes straight from Mailchimp, and their API has to run certain calls when registering new emails, I need to get a callback before I proceed to the last page of the quiz, then redirecting the user to the Techless.com landing page."
+      },
+      {
+        "component": "Image",
+        "source": "quiz/design-details/validation.jpg",
+        "alt": "Mailchimp validation code for testing if we successfully received a signup from the user"
+      },
+      {
+        "component": "Body",
+        "content": "You'll see from the validation code above that I was able to hack this system to work by requiring the function to receive back very specific text into the Mailchimp field with the ID \"mce-success-response\". With the right text in place, the program can move forward."
+      },
+      {
+        "component": "Body",
+        "content": "It's worth noting that I'm fully aware that the solution I came up with at that time was not really the best. Anyone privvy enough to javascript could easily read this and skip the email signup. But for the majority of our users, I didn't have reason to anticipate that, and the ramifications would be minimal since the content was not sensitive. It's important to realise when there is reason to take on such battles as making a full-proof system that cannot be hacked, but this was a time where it didn't matter for our need."
+      },
+      {
         "component": "Subheading",
         "content": "The Final Result"
-      }
+      },
+      {
+        "component": "Body",
+        "content": "Overall, I was very pleased with the end result. We created a fun, engaging, evergreen marketing piece that's distinct to Techless while spending minimal amounts of money on the development of the tool. If you haven't had a chance, I'd encourage you to try and take the quiz. <a href=\"techaddictionquiz.com\">Techaddictionquiz.com</a>."
+      },
     ]
   },
   {
@@ -283,7 +330,20 @@ const work = [
     "skills": "Graphic Design | Animation | Scripting",
     "date": `${new Date().getFullYear()}`,
     "path": "animations",
-    "graphic": "moving-graphic.gif"
+    "graphic": "moving-graphic.gif",
+    "content": [
+      {
+        "component": "Title",
+        "content": "Building an Internal Tool"
+      },
+      {
+        "component": "Heading",
+        "content": "The Need"
+      },
+      {
+
+      }
+    ]
   },
   {
     "key": "w04",
@@ -291,7 +351,88 @@ const work = [
     "skills": "UX Design | Programming | Branding",
     "date": "2017",
     "path": "email-signatures",
-    "graphic": "email-sig-builder-tool-splash.jpg"
+    "graphic": "email-sig-builder-tool-splash.jpg",
+    "content": [
+      {
+        "component": "Title",
+        "content": "Building an Internal Tool"
+      },
+      {
+        "component": "Heading",
+        "content": "The Need"
+      },
+      {
+        "component": "Body",
+        "content": "The idea of the \"Email Signature Builder Tool\" was far off when I started assisting in the creation of our Dexter Solutions' branded signature designs."
+      },
+      {
+        "component": "Gallery",
+        "galleryType": "masonry",
+        "content": [
+          {
+            "source": "email-sig/early-1.jpg",
+            "alt": "early dexter email signature",
+            "caption": "Old designs were inconsistent from brand to brand."
+          },
+          {
+            "source": "email-sig/early-2.jpg",
+            "alt": "early dexter hospitality email signature with graphics",
+            "caption": "Different team membes had different addresses, logos, and data to share with clients."
+          }
+        ]
+      },
+      {
+        "component": "Body",
+        "content": "New, unified layouts were crafted by our marketing team and forwarded on to development to write the html code. They would feature a \"Dexter Solutions\" logo and required information displayed in a standardized format."
+      },
+      {
+        "component": "Body",
+        "content": "Once the html was complete, we connected with key team members on how to implement their code and apply their custom signature within various email clients like Gmail or Outlook. Most users understood how to copy and paste the materials with ease, so this worked for a while."
+      },
+      {
+        "component": "Heading",
+        "content": "Expanded Scopes"
+      },
+      {
+        "component": "Body",
+        "content": "The job became more complex when operations requested to have corporate headshots included for the majority of our users. Emailing over a blank signature and expecting sales members to add all the components, especially an image, was out of the question. This would be too difficult for team members to accomplish on their own and prone to brand inconsistencies. At this time, I began to explore a new approach to the request."
+      },
+      {
+        "component": "Gallery",
+        "galleryType": "masonry",
+        "content": [
+          {
+            "source": "email-sig/nb_ex.jpg",
+            "alt": "new branded email signature example",
+            "caption": "Headshopts were loaded in based on the email address."
+          },
+          {
+            "source": "email-sig/am_ex.jpg",
+            "alt": "new branded email signature example with A S Hospitality logo",
+            "caption": "The signature builder tool let employees choose which marketing banner, if any, they wanted to include in their signature. They could also opt to brand their emails with the A s Hospitality logo instead of Dexter Solutions."
+          }
+        ]
+      },
+      {
+        "component": "Body",
+        "content": "With some basic understanding of Javascript, I knew it was possible to change the contents of various elements on a click action. This gave me the idea of using a form to dynamically update the contents of the signature design. With lots of research and comprehensive testing, I was able to put together a demo for our team that met the needs and included each user's headshot! We quickly launched the tool company-wide to ensure all users could be on-brand with their email messaging."
+      },
+      {
+        "component": "Body",
+        "content": "We pushed the \"Email Signature Builder Tool\" a little farther by also including customizable branding options and marketing banners for different use cases. Also, a text-only version was included for some systems that don't accept imagery. In addition, all variables can be \aved into the URL string by clicking \"Save\" or the \"I\" beam. This makes it possible for all users to have their own unique url to come back to should they need to make an update to their signature in the future."
+      },
+      {
+        "component": "Body",
+        "content": "When you <a href=\"../assets/signature/Email%20Signature%20Builder%20Tool.html\" target=\"_blank\">check out the tool</a>, try using the email address, \"nburgher@dextersolutions.net\". This will make my headshot appear!"
+      },
+      {
+        "component": "Button",
+        "destination": "../assets/signature/Email%20Signature%20Builder%20Tool.html",
+        "content": "Check out the Tool",
+        "target": "_blank",
+        "design": "button-1"
+      },
+    ]
   }
 ]
 export default work;

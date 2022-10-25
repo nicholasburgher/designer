@@ -5,12 +5,15 @@
         display: flex;
         flex-flow: row wrap;
         //flex-direction: column;
+        justify-content: center;
         gap: 1rem;
         width: 100%;
         .image-group {
             width: calc((100% - 2rem - 1px)/3);
             img {
                 width: 100%;
+                border-radius: 6px;
+                cursor: pointer;
             }
             p.caption {
                 text-align: center;

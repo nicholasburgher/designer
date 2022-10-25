@@ -70,6 +70,23 @@ h3 {
     white-space: nowrap;
   }
 }
+//LIGHTBOX
+.lightbox-matte {
+  background: rgba(0,0,0,.5);
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  bottom: 100%;
+  left: 0px;
+  opacity: 0;
+  pointer-events: none;
+  transition: all ease-in-out 300ms;
+  &.active {
+    opacity: 1;
+    bottom: 0px;
+    pointer-events: all;
+  }
+}
 
 //Articles
 .article-content {
@@ -110,6 +127,14 @@ h3 {
       font-size: smaller;
       font-style: italic;
       color: rgba($theme_background,0.7);
+    }
+    a {
+      color: $theme_accent;
+      filter: brightness(0.6) saturate(4);
+      text-decoration: none;
+      &:hover {
+        text-decoration: underline;
+      }
     }
   }
   ul, ol {
