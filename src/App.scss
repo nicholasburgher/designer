@@ -115,6 +115,9 @@ h3 {
     font-weight: 600;
     letter-spacing: 0.01em;
     padding-top: calc(#{$base_unit} * 2);
+    &.centered {
+      text-align: center;
+    }
   }
   p {
     //background: rgba($theme_background, 0.5);
@@ -143,6 +146,26 @@ h3 {
     margin-bottom: $base_unit;
   }
 }
+
+/* YOUTUBE EMBED */
+.video-responsive {
+  overflow: hidden;
+  margin-top: $base_unit;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0;
+  iframe {
+    left: 50%;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    max-width: 700px;
+    max-height: 393.75px;
+    transform: translateX(-50%);
+    position: absolute;
+  }
+}
+
 /*  FOOTER  */
 .footer {
   margin: calc(#{$base_unit} * 2) calc(#{$marginH} * -1) 0;
@@ -202,5 +225,8 @@ h3 {
     h2 {
       font-size: 38px;
     }
+  }
+  .video-responsive {
+    padding-bottom: 393.75px;
   }
 }

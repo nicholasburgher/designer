@@ -9,6 +9,7 @@ import List from "../components/blocks/List";
 import Gallery from "../components/blocks/Gallery";
 import Button from "../components/blocks/Button";
 import Video from "../components/blocks/Video";
+import YoutubeEmbed from "../components/blocks/YoutubeEmbed";
 
 function buildBlock(item) {
     switch (item.component) {
@@ -22,7 +23,7 @@ function buildBlock(item) {
             )
         case "Subheading":
             return (
-                <Subheading content={item.content} />
+                <Subheading content={item.content} design={item.design} />
             )
         case "Body":
             return (
@@ -50,7 +51,11 @@ function buildBlock(item) {
             )
         case "Video":
             return (
-                <Video source={item.source} />
+                <Video source={item.source} autoplay={item.autoplay} />
+            )
+        case "YoutubeEmbed":
+            return (
+                <YoutubeEmbed embedId={item.embedId} startAt={item.startAt}/>
             )
         default:
             return (

@@ -334,14 +334,137 @@ const work = [
     "content": [
       {
         "component": "Title",
-        "content": "Building an Internal Tool"
+        "content": "Animation Showcase"
       },
       {
-        "component": "Heading",
-        "content": "The Need"
+        "component": "Subheading",
+        "design": "centered",
+        "content": "Graphic Design | Animation | Scripting"
       },
       {
-
+        "component": "Body",
+        "design": "centered",
+        "content": "This is a collection of some of the more interesting animation projects I have created. My animation style is fun, light-hearted, punchy. I've worked on animations with Photoshop, AfterEffects, Resolve, and CSS."
+      },
+      {
+        "component": "Subheading",
+        "content": "NBD Animated Logo"
+      },
+      {
+        "component": "Image",
+        "source": "../videos/animations/UI-Animation-2.gif",
+        "alt": "Nick Burgher Design - Animated Logo"
+      },
+      {
+        "component": "Body",
+        "content": "Created with love by hand in Photoshop 7.0 and ImageReady<br/>built frame-by-frame!",
+        "design": "centered caption"
+      },
+      {
+        "component": "Subheading",
+        "content": "Tech Addiction Quiz Social Ad"
+      },
+      {
+        "component": "Video",
+        "source": "animations/TechlessQuiz_Ad_compressed.mov"
+      },
+      {
+        "component": "Body",
+        "content": "Taking the illustration I created for the <a href=\"./tech-addiction-quiz\">Tech Addiction Quiz</a>, I animated the \"smartphone disciple\" character and added supporting text to drive interest in taking the online quiz.",
+        "design": "centered caption"
+      },
+      {
+        "component": "Subheading",
+        "content": "Techless Talks Bumper"
+      },
+      {
+        "component": "Video",
+        "source": "animations/TTBumper_compressed.mov",
+        "autoplay": "autoplay"
+      },
+      {
+        "component": "Body",
+        "content": "Bumper video for \"Techless Talks\" video series. Full sequence production including visual art direction, pacing, animation, and audio selection. I did not do the final Techless logo animation. Instead see below for a Techless logo animation I did do.",
+        "design": "centered caption"
+      },
+      {
+        "component": "Subheading",
+        "content": "Animated Techless Logo"
+      },
+      {
+        "component": "Video",
+        "source": "animations/TechlessAnimatedLogo_compressed.mov"
+      },
+      {
+        "component": "Body",
+        "content": "Originally built for use within a slide presentation with the Sexual Intergrity Leaderhsip Summit. This version of the Techless logo was animated from line data and utilized physics-based keyframing in AfterEffects to give it some added life.",
+        "design": "centered caption"
+      },
+      {
+        "component": "Subheading",
+        "content": "Dexter Solutions Logo Animation"
+      },
+      {
+        "component": "YoutubeEmbed",
+        "embedId": "K-C-Co1u7sI"
+      },
+      {
+        "component": "Body",
+        "content": "Animation for Dexter Solutions branded videos. Built with AfterEffects.",
+        "design": "centered caption"
+      },
+      {
+        "component": "Subheading",
+        "content": "Status Auto Detailing"
+      },
+      {
+        "component": "YoutubeEmbed",
+        "embedId": "9ywCsmroOgs"
+      },
+      {
+        "component": "Body",
+        "content": "Status Auto Detailing in Springfield MO. Animation created in AfterEffects using complex mask groups, smooth keyframe interpolation, expressions, and 3D rotation.",
+        "design": "centered caption"
+      },
+      {
+        "component": "Subheading",
+        "content": "\"Sellable Units\" Stop Motion"
+      },
+      {
+        "component": "YoutubeEmbed",
+        "embedId": "xIras8B23Rs",
+        "startAt": "12"
+      },
+      {
+        "component": "Body",
+        "content": "Internal initiative, frame animation created with Nikon D750 and a lot of chocolate. Had to be created in reverse order because the video wraps each of the items into their wrappers. Fun fun.",
+        "design": "centered caption"
+      },
+      {
+        "component": "Subheading",
+        "content": "SVG Web Animations"
+      },
+      {
+        "component": "Video",
+        "source": "animations/SVGAnim_compressed.mov"
+      },
+      {
+        "component": "Body",
+        "content": "This clever SVG animation was designed in Figma first, then exported to code. With CSS, I was able to animate specific parts of the image in order to have our character move within the space. Building an animation in this way is a much better alternative to GIFs and embedded videos for web implementations, and also can be a lot sharper when rendered to the screen.",
+        "design": "centered caption"
+      },
+      {
+        "component": "Subheading",
+        "content": "\"3 Phones\" Animation"
+      },
+      {
+        "component": "Video",
+        "source": "animations/3Phones_Anim_compressed1080.mov"
+      },
+      {
+        "component": "Body",
+        "content": "Created for a website header video, this looping animation was designed to loop continuously on the Techless homepage to quickly showcase the Wisephone product to first-time visitors. With AfterEffects, I was able to chain the animation of one object to another and set an offset value so that elements moved in a wave-like pattern.",
+        "design": "centered caption"
       }
     ]
   },
@@ -419,7 +542,7 @@ const work = [
       },
       {
         "component": "Body",
-        "content": "We pushed the \"Email Signature Builder Tool\" a little farther by also including customizable branding options and marketing banners for different use cases. Also, a text-only version was included for some systems that don't accept imagery. In addition, all variables can be \aved into the URL string by clicking \"Save\" or the \"I\" beam. This makes it possible for all users to have their own unique url to come back to should they need to make an update to their signature in the future."
+        "content": "We pushed the \"Email Signature Builder Tool\" a little farther by also including customizable branding options and marketing banners for different use cases. Also, a text-only version was included for some systems that don't accept imagery. In addition, all variables can be saved into the URL string by clicking \"Save\" or the \"I\" beam. This makes it possible for all users to have their own unique url to come back to should they need to make an update to their signature in the future."
       },
       {
         "component": "Body",
