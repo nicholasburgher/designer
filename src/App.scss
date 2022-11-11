@@ -92,6 +92,7 @@ h3 {
 .article-content {
   color: $theme_primary;
   color: $theme_background;
+  animation: fadeIn ease-in-out 300ms, slideIn_bottom ease-in-out 500ms;
   h2 {
     text-transform: none;
     font-weight: 600;

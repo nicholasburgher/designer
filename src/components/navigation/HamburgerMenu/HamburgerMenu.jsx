@@ -21,8 +21,8 @@ function HamburgerMenu() {
         <div className="bar"></div>
       </div>
       <div className={`Nav ${isOpen ? "active" : ""}`}>
-        <NavLink onClick={handleClick} to="/">Landing</NavLink>
         <NavLink onClick={handleClick} to="work">Work</NavLink>
+        <NavLink onClick={handleClick} to="/">Landing</NavLink>
       </div>
     </div>
   );

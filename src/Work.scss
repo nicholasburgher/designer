@@ -2,7 +2,13 @@
 
 .workTable {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     gap: 16px;
     animation: fadeIn ease-in-out 300ms, slideIn_bottom ease-in-out 500ms;
+}
+
+@media only screen and (min-width: 568px) {
+    .workTable {
+        grid-template-columns: 1fr 1fr;
+    }
 }

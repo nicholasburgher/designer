@@ -5,7 +5,7 @@ const work = [
     "skills": "UX/UI Design | Product Design | Graphics",
     "date": "2020 - Present",
     "path": "wisephone",
-    "graphic": "unamed.jpg",
+    "graphic": "wisephone/Wisephone_newBox.jpg",
     "content": [
       {
         "component": "Title",
@@ -142,7 +142,7 @@ const work = [
     "skills": "Illustration | Web Design | Development | Marketing",
     "date": "2020",
     "path": "tech-addiction-quiz",
-    "graphic": "unamed.jpg",
+    "graphic": "quiz/COB_Junky.png",
     "content": [
       {
         "component": "Title",
@@ -330,7 +330,7 @@ const work = [
     "skills": "Graphic Design | Animation | Scripting",
     "date": `${new Date().getFullYear()}`,
     "path": "animations",
-    "graphic": "moving-graphic.gif",
+    "graphic": "anim-bg.jpg",
     "content": [
       {
         "component": "Title",
@@ -474,11 +474,17 @@ const work = [
     "skills": "UX Design | Programming | Branding",
     "date": "2017",
     "path": "email-signatures",
-    "graphic": "email-sig-builder-tool-splash.jpg",
+    "graphic": "email-sig/email-signature-graphic.jpg",
     "content": [
       {
         "component": "Title",
         "content": "Building an Internal Tool"
+      },
+      {
+        "component": "Image",
+        "source": "email-sig/email-signature-graphic.jpg",
+        "customClass": "smaller",
+        "alt": "email signature tool illustrative graphic"
       },
       {
         "component": "Heading",
