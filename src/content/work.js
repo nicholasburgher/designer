@@ -161,7 +161,7 @@ const work = [
       },
       {
         "component": "Button",
-        "destination": "techaddictionquiz.com",
+        "destination": "https://nicholasburgher.github.io/quiz/index2.html",
         "content": "Go to the Tech Addiction Quiz",
         "target": "_blank",
         "design": "button-1"
@@ -239,7 +239,7 @@ const work = [
       },
       {
         "component": "Body",
-        "content": "I requested the team allow me to build a custom-coded webpage on our site that would house the whole quiz. I was confident we would have MUCH greater flexibility to create something truly unique and \"Techless\", that met all our needs, and ticked all the boxes of the project scope, buy going with a custom-coded solution rather than using one of the stock options. Both the cost-savings from not using those tools and the better user experience were tradeoffs we were willing to make in the end."
+        "content": "I requested the team allow me to build a custom-coded webpage on our site that would house the whole quiz. I was confident we would have MUCH greater flexibility to create something truly unique and \"Techless\", that met all our needs, and ticked all the boxes of the project scope, by going with a custom-coded solution rather than using one of the stock options. Both the cost-savings from not using those tools and the better user experience were tradeoffs we were willing to make in the end."
       },
       {
         "component": "Image",
@@ -257,7 +257,7 @@ const work = [
       },
       {
         "component": "Body",
-        "content": "The main UI for the web app is also very simple, both mobile friendly and user friendly. All questions are \"Yes\" or \"No\" questions, and the butons for the submission stays in the same place on all pages. A simple tally system keeps track of what question the user is on. And page elements visually transition with smooth welcoming animations. These were all things we learned over time would make the interface more inviting and completable for users."
+        "content": "The main UI for the web app is also very simple, both mobile friendly and user friendly. All questions are \"Yes\" or \"No\" questions, and the buttons for the submission stays in the same place on all pages. A simple tally system keeps track of what question the user is on. And page elements visually transition with smooth welcoming animations. These were all things we learned over time would make the interface more inviting and completable for users."
       },
       {
         "component": "Body",
@@ -299,7 +299,7 @@ const work = [
       },
       {
         "component": "Body",
-        "content": "Lastly, I had to spend some serious time working through implementing a email submission wall. Because some of the code comes straight from Mailchimp, and their API has to run certain calls when registering new emails, I need to get a callback before I proceed to the last page of the quiz, then redirecting the user to the Techless.com landing page."
+        "content": "Lastly, I had to spend some serious time working through implementing a <u>email submission wall</u>. Because some of the code comes straight from Mailchimp, and their API has to run certain calls when registering new emails, I need to get a callback before I proceed to the last page of the quiz, then redirecting the user to a specific Techless.com landing page based on their quiz result."
       },
       {
         "component": "Image",
@@ -320,7 +320,7 @@ const work = [
       },
       {
         "component": "Body",
-        "content": "Overall, I was very pleased with the end result. We created a fun, engaging, evergreen marketing piece that's distinct to Techless while spending minimal amounts of money on the development of the tool. If you haven't had a chance, I'd encourage you to try and take the quiz. <a href=\"techaddictionquiz.com\">Techaddictionquiz.com</a>."
+        "content": "Overall, I was very pleased with the end result. We created a fun, engaging, evergreen marketing piece that's distinct to Techless while spending minimal amounts of money on the development of the tool. If you haven't had a chance, I'd encourage you to try and take the quiz. <a href=\"https://nicholasburgher.github.io/quiz/index2.html\">Techaddictionquiz.com</a>."
       },
     ]
   },
