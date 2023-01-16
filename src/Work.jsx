@@ -2,12 +2,13 @@ import "./Work.scss";
 //import BrandedHeader from "./components/navigation/BrandedHeader/BrandedHeader";
 import WorkCard from "./components/WorkCard/WorkCard";
 import PageTitle from "./components/PageTitle/PageTitle";
+import Button from "./components/blocks/Button";
 import work from "./content/work";
 
 function Work() {
   return (
     <div>
-      <PageTitle content="User Experience Design" />
+      <PageTitle content="Featured Projects" />
       <div className="workTable">
         {work.map((workItem) => {
           return (
@@ -15,7 +16,13 @@ function Work() {
           )
         })}
       </div>
-
+      <div style={{
+        display: "grid",
+        alignItems: "center",
+        paddingTop: "2rem"
+        }}>
+        <Button design="button-1" destination="https://dribbble.com/nicholasburgher" target="_blank" content="See More on Dribbble" />
+      </div>
     </div>
   )
 }

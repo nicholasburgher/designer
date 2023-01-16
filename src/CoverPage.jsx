@@ -6,10 +6,12 @@ function CoverPage() {
     <div class="cover-page">
       <div style={{ textAlign: "center" }}>
         <h1>Designer</h1>
-        <h2>Nicholas Burgher</h2>
+        <h2 onClick={() => navigate('about')} style={{ cursor: "pointer" }}>Nicholas Burgher</h2>
       </div>
-      <h3 onClick={() => navigate('work')} style={{ cursor: "pointer" }}>ENTER</h3>
+      
     </div>
   )
 }
 export default CoverPage;
+
+//<h3 onClick={() => navigate('work')} style={{ cursor: "pointer" }}>ENTER</h3>

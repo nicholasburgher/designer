@@ -1,9 +1,11 @@
 $theme_background: #FFF;
 $theme_primary: #333;
 $theme_accent: #95B7C2;
+$theme_accent_darker: hsl(195, 27%, 57%);
 
 $base_unit: 1rem;
 $marginH: 24px;
+$standard_transition: all ease-in-out 300ms;
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800&family=Noto+Serif+Display:ital,wght@1,600&display=swap');
 

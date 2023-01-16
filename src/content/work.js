@@ -9,17 +9,21 @@ const work = [
     "content": [
       {
         "component": "Title",
-        "content": "Simplifying the modern mobile OS"
+        "content": "Wisephone Product Design"
+      },
+      {
+        "component": "Subheading",
+        "design": "centered",
+        "content": "UX/UI Design | Product Design | Graphics"
       },
       {
         "component": "Body",
         "design": "full-width centered",
-        "content": "Wisephone is a minimalist phone with a clean and simple UI. <br/>Each app is branded to present a unified, distraction-free user experience."
+        "content": "Wisephone is a minimalist phone with a clean and simple UI. <br/>Each app custom designed to present a unified, distraction-free user experience."
       },
       {
-        "component": "Image",
-        "source": "wisephone/Angeled_NewMapsV2_WB.png",
-        "alt": "Wisephone"
+        "component": "Video",
+        "source": "WP_ProductShowcase_Compressed.mov"
       },
       {
         "component": "Heading",
@@ -28,81 +32,85 @@ const work = [
       {
         "component": "Body",
         "design": "full-width",
-        "content": "Turning the vision of Wisephone into a reality has been <strong><u>no easy feat</u></strong>. Creating a cohesive branded experience across an entire OS requires serious planning and thought, even for such a straight-forward design as Wisephone."
+        "content": "Creating a cohesive branded user experience across an entire OS no doubt requires serious planning and thought to execute, even for such a straight-forward product as Wisephone."
       },
       {
         "component": "Body",
         "design": "full-width",
-        "content": "To turn our customized version of Android into WiseOS, we essentially had to create a new design language that could be applied across our library of shared apps and tools."
+        "content": "To turn our WiseOS into a memorable branded user experience, we had to define a comprehensive design language that would work well across the wide variety of application&nbsp;scenarios.<br/><br/>"
       },
       {
-        "component": "Heading",
-        "content": "Hurdles to Success"
+        "component": "Gallery",
+        "galleryType": "masonry",
+        "content": [
+          {
+            "source": "wisephone/DSC_3967_WisephoneTexting.jpg",
+            "alt": "Texting on Wisephone",
+            "caption": "Texting on Wisephone is familiar yet clean, with a bright, bloatless interface to fit user needs."
+          },
+          {
+            "source": "wisephone/WisephoneCamera2-0.jpg",
+            "alt": "Camera App",
+            "caption": "We revamped the Camera tool in late 2022 with a new interface and improvemed performance."
+          }
+        ]
+      },
+      {
+        "component": "Body",
+        "content": "However, early Wisephone builds lacked this level of consistency. Even though we were using modern design tools like Figma as our \"Source of Truth,\" we handn't quite discovered how to best deliver a consistent looking design in final output."
+      },
+      {
+        "component": "Body",
+        "content": "What was wrong? Despite all the rules and guidelines our team added to prevent inconsistency, something wasn't clicking. A hundred little things were being overlooked: wrong font sizes, margin issues, small hit boxes, bad interactions, and bugs. I was hungry to figure out what was going on."
       },
       {
         "component": "Subheading",
-        "content": "The Single Source of Truth"
+        "content": "Investigation"
       },
       {
         "component": "Body",
-        "content": "Our team considers Figma as our \"Single Source of Truth\" for developers and designers. Whatever is designed in Figma is how it should look when coded. But early on, it was clear that the <strong>Figma designs were not being followed</strong>, or at least not 100% of the time. There would be a hundred minor discrepencies from our design and the final output. In addition, some things were built without there ever being any design documentation provided. "
+        "content": "Digging in, I found some team members believed cultural differences and language barriers were contributing to the innacurate design builds. They communicated that our developers required extremely rigid guidelines or else they would basically go rogue and build whatever they wanted. And with tight time constraints, we couldn't afford for developers to rebuild something twice or play guessing games."
       },
       {
         "component": "Body",
-        "content": "Why was this the case? Project managers, who are supposed to remove barriers, were thus beginning to impose new rules on the development team to restict them from working on tasks without designs. It had to be in Figma or it wasn't worked on...it had to be on a roadmap...it had to have a ticket. These weren't bad standards to have, but they demotivated creativity and spontaneous discovery of new ideas. I began investigating why we were having this problem in the first place."
-      },
-      {
-        "component": "Subheading",
-        "content": "Findings"
+        "content": "While I agreed it would be most efficient if developers had straightforward documentation of the final output up front, I didn't like how this rigidity cut out the creativity and input of our engineers. Often, engineers come up with the best solutions to problems because they understand the capabilities of the systems they work within. I also didn't like that our team was responding out of fear, and thus adding new process requirements that were disempowering the team to think creatively."
       },
       {
         "component": "Body",
-        "content": "Team members initially believed cultural differences and language barriers were contributing to innacurate design builds. I found myself less convinced of this since I did not encounter issues when communicating. Instead, my attention was turned to a different question, was Design providing the dev team with adequate documentation to build our designs? Was Figma really a good source of truth?"
+        "content": "Less convinced we had a personnel issue, my attention turned elsewhere; how good was our design documentation? Could our development team actually build the spec? Was Figma really a good source of truth?"
+      },
+      {
+        "component":"Heading",
+        "content": "First Steps"
       },
       {
         "component": "Combination",
         "design": "body-two-thirds",
         "title": "Transforming Figma",
-        "content": "Our master Figma file contained dozens of screen views, designed independent of one another. Most elements were absolute positioned with constraints on the top left. Fonts were generally consistent but not linked to styles. Also, there were only a few \"components\" (reusable UI elements) and they weren't well documented.<br/><br/> Over the next 2 years, I would transform our master Figma file into a <strong>component-driven design system</strong>. It would contain reusable UI components and assets, greater frame consistency across the board, uniform text and color styling, and animated prototypes where appropriate.",
+        "content": "There was definitely room to improve our master Figma file. Dozens of screen views contained \"absolute positioned\" elements with no thought to how it would translate to the device. Fonts, while generally consistent, were not linked to a style. There were only a few \"components\" (reusable UI elements) and they weren't well documented.<br/><br/> Before anything else, I would begin working on the transformation of our master Figma file into a useful and trustworthy tool for developers.",
         "source": "wisephone/More-Keyboard-Components.jpg",
         "alt": "Wisephone Components",
-        "caption": "Every UI element would be turned into reusable components, even down to the finest details. Above are component specific to the Keyboard app."
-      },
-      {
-        "component": "Subheading",
-        "content": "Auditing the Current Product"
-      },
-      {
-        "component": "Body",
-        "content": "Since we were discovering inconsistencies in our builds from the design, I needed a way to audit the apps easily. I would also need to build missing screens from what was live on the phone or website in order to be prepared to make adjustments."
-      },
-      {
-        "component": "Combination",
-        "design": "image-one-third",
-        "content": "One of the best tools for auditing the UI was Android debugging. Turning on this mode would allow us to see the underlying structure of live code, and to evaluate if improvements could be made. This was a much faster alternative to looking at source code in Android studio, because problems could be identified rather quickly.<br/><br/>After reviewing, we could more accurately report why certain bugs occur or share more specifics on what could be changed to improve the user experience.",
-        "source": "wisephone/calcscreen.png",
-        "alt": "Wisephone debugging",
-        "caption": "Above you can see some elements were a little larger than others, and extra frames existed."
-      },
-      {
-        "component":"Heading",
-        "content": "What was Implemented"
+        "caption": "Every UI element would be turned into a reusable component, even down to the finest details. Above are components specific to the Keyboard app."
       },
       {
         "component": "Combination",
         "design": "body-two-thirds",
-        "title": "Structure & Components",
-        "content": "After reworking Figma, we now have clearly divided pages including one specific to just Components for WiseOS. This has made it a lot easier to find pieces for new UI builds and communicate our design intent to others. <br/><br/> It's also worth noting we now directly link to Figma frames when sharing documentation. Before we would just attach a screenshot or type out the frame name for developers to look up. A direct link removes the searching process and let's them see first hand.",
+        "title": " ",
+        "content": "We divided content into separate pages for the different product teams, including one specific to WiseOS Components. This made it a lot easier to find UI elements when building new interfaces and to communicate their purpose.",
         "source": "wisephone/FigmaPages.jpg",
         "alt": "picture showing figma pages for our design system"
       },
       {
         "component": "Combination",
         "design": "image-one-third",
-        "title":"Constraints",
-        "content": "Also, all screen views utilize frame constraints in order to ensure our app will run well on any device size. From time to time, we change phone models, so this is important to have in Figma as well. We try our best to give consistent names to each section in a view, and to name it close to what developers may use when building in Android studio.",
+        "title":"Adding Constraints",
+        "content": "Screen views were rebuilt with intelligent constraints to ensure our apps run well on any screen size. Each section in a view was given a name to closely represent what developers use when building in Android Studio.",
         "source" : "wisephone/Constraints.gif",
         "alt": "frame constraints and structure"
+      },
+      {
+        "component": "Heading",
+        "content": "New Practices for Design"
       },
       {
         "component": "Subheading",
@@ -110,7 +118,7 @@ const work = [
       },
       {
         "component": "Body",
-        "content": "The Wisephone project has also challenged me to deepen not only my UI building skills but UX also. Taking documentation to the next level, I discovered how to use <strong><u>business rules</u></strong>, <strong><u>test cases</u></strong>, and <strong><u>user flow diagrams</u></strong> to better communicate the intent of complex designs. These details are often very hard to communicate in Figma directly and when your teams are remote. Tables, charts, and product requirement documents help team members better envision the end product and remove the guesswork. I have deeply grown in my skills at crafting such technical documentation."
+        "content": "In late 2021, we also began to make it common practice to include product design documents with every new build request. Documentation included <strong><u>business rules</u></strong>, <strong><u>test cases</u></strong>, and <strong><u>user flow diagrams</u></strong> to communicate details that were more challenging to pass along through Figma or plain text."
         
       },
       {
@@ -119,20 +127,69 @@ const work = [
         "alt": "User flow documentation example"
       },
       {
+        "component": "Body",
+        "content": "We encouraged developers to give their feedback upon reviewing the design details, letting us know if there were any gaping holes or flaws in the design. These Product Requirement Documents, or PRDs, were also great for reviewing final design with company leadership before beginning development."
+      },
+      {
+        "component": "Heading",
+        "content": "New Channels of Communication"
+      },
+      {
+        "component": "Body",
+        "content": "It's often said that companies move at the speed of trust. Poor communication will break down trust every time. Since our dev team was 11 hours ahead and could only meet with U.S. team members virtually, we  inherently had communication barriers that would need special attention."
+      },
+      {
+        "component": "Body",
+        "content": "We saw major improvements when we implemented a weekly one-hour meeting with all developers, our designer (me), and the product and/or project manager. These \"face-to-face\" opportunities helped our team grow familiar with the people we were working with. I grew to love the dev team and each of their quirks, interests, and talents. One team member was really into his fish! Another was an avid soccer fan. Another was working on her masters."
+      },
+      {
+        "component": "Body",
+        "content": "In addition to the meetings, we opened up a development Slack channel where we could send quick update messages, questions, or encouragement. We then made it common practice to communicate on it. We also made it culturally OK to ask questions directly to team members working on projects. Because of the face-to-face meetings, people were less hesitant to reach out via Slack for a quick word or spontaneous meeting because we grew comfortable and trusting with one another."
+      },
+      {
         "component":"Heading",
         "content": "Results"
       },
       {
-        "component": "Body",
-        "content": "The Techless vision of Wisephone is coming to life more and more every day. As an ongoing project, we've learned a lot since the start of 2019 and we still believe there's more to learn and do to strengthen our system. But we are proud to say our most recent releases have knocked out many of the UX bugs that early adopters were so patient with us in fixing."
+        "component": "Image",
+        "source": "wisephone/Wisephone_newBox.jpg",
+        "alt": "Wisephone model 3"
       },
       {
         "component": "Body",
-        "content": "We're now delivering a truly unique product with it's own unique feel that you can't find anywhere else!"
+        "content": "The most valuable result that came from the changes we made were the relationships I formed with the individuals who worked on Wisephone with me. We grew to trust each other and believe we were all on the same team, passionate about delivering a quality phone solution to those looking to break free from addictive technology."
       },
       {
         "component": "Body",
-        "content": "As we look into the future and what Techless will do next, I am confident the work we accomplished in establishing best practices and a repeatable, growing system of UI components and user experience patterns will continue to influence the Techless brand and keep it well established for years to come."
+        "content": "But, we also saw a drastic decrease in design consistency issues, as well as bugs. The stronger initial documentation made it much easier for developers to comprehend the intent the designer was going for. The improvements in communication helped build trust and challenged team members to share their input in order to affect final outcomes."
+      },
+      {
+        "component": "Body",
+        "content": "In addition, other team members took the lead in implementing better testing practices for the product, which included testing the Figma design and PRD against pre-production releases. We also petitioned to bring aboard a dedicated product manager to help. This critical team member became the glue for our team, who would vouch for us and understand all viewpoints to make tough tradeoffs for the business and product."
+      },
+      {
+        "component": "Heading",
+        "content": "Conclusion"
+      },
+      {
+        "component": "Body",
+        "content": "While I would say I played a major role in designing the Wisephone experience, my work would have been worthless if our team couldn't have built it. Below is the list of contributions I made while working on Wisephone:"
+      },
+      {
+        "component": "List",
+        "listType": "unordered",
+        "content": [
+          "Interface design, phone-wide",
+          "New product features and improvements (discovery and validation)",
+          "Product design documentation",
+          "Management of Figma design system and components",
+          "Marketing content creation (Photography, Videography, Mockups, etc.)",
+          "Product testing"
+        ]
+      },
+      {
+        "component": "Body",
+        "content": "Learn more about Wisephone at <a href=\"techless.com\">Techless.com</a>.<br/><br/>"
       }
     ]
   },
@@ -146,12 +203,12 @@ const work = [
     "content": [
       {
         "component": "Title",
-        "content": "Email Funnel as a Fun Touchpoint"
+        "content": "Tech Addiction Quiz"
       },
       {
         "component": "Body",
         "design": "centered",
-        "content": "Capturing leads through engaging content is a great way to empower marketing efforts. The Tech Addiction Quiz was one of the most involved lead generation systems I've ever been involved in creating, and one of the projects I'm most proud of."
+        "content": "The Tech Addiction Quiz was one of my most involved projects I've helped create, and one I'm most excited to share with others! The lighthearted aesthetic and engaging interface makes it stand out as a powerful lead generation tool for the Techless brand."
       },
       {
         "component": "Image",
@@ -162,28 +219,32 @@ const work = [
       {
         "component": "Button",
         "destination": "https://nicholasburgher.github.io/quiz/index2.html",
-        "content": "Go to the Tech Addiction Quiz",
+        "content": "Take the Tech Addiction Quiz!",
         "target": "_blank",
         "design": "button-1"
       },
       {
-        "component": "Heading",
-        "content": "Involvement"
+        "component": "Subheading",
+        "content": "My Involvement"
       },
       {
         "component": "List",
         "listType": "unordered",
         "content": [
-          "Design illustrations for each tech addict personas",
-          "Design the quiz interface",
-          "Set up email automation journeys in Mailchimp",
-          "Develop the site, both UI and functionality",
-          "Create supporting landing pages for each persona"
+          "Persona Illustrations",
+          "Quiz Experience Design",
+          "Distribution & Marketing",
+          "Development",
+          "Landing Page Design"
         ]
       },
       {
-        "component": "Subheading",
+        "component": "Heading",
         "content": "Illustrating the Personas"
+      },
+      {
+        "component": "Body",
+        "content": "I worked with creative writers to name the different personas and determine the visual characteristics we wanted to highlight. Each character was sketched on paper first. Then, the team talked through the design until we locked in the visual components. They were digitized and further refined, starting with line work, then basic shading, then lighting and coloring."
       },
       {
         "component": "Image",
@@ -192,7 +253,7 @@ const work = [
       },
       {
         "component": "Body",
-        "content": "I worked with creative writers in naming the different personas and determining the visual characteristics we wanted to highlight. Each character was sketched on paper first, then refined. When all concepts were nearly locked down, they were digitized and further refined, starting with line work, then basic shading, then toning and coloring."
+        "content": "In all, we came up with 5 tech addiction personas, each one slightly more addicted to their device than the last. Quiz takers would answer simple questions and be given a persona that fits them at the end!"
       },
       {
         "component": "Gallery",
@@ -226,7 +287,7 @@ const work = [
         ]
       },
       {
-        "component": "Subheading",
+        "component": "Heading",
         "content": "Custom Quiz Experience"
       },
       {
@@ -235,11 +296,15 @@ const work = [
       },
       {
         "component": "Body",
-        "content": "Many online surveying tools exist out there such as Survey Monkey, Google Forms, and Typeform. But none allowed quite the customizability we were looking for. We needed <strong>email client integration</strong>, on-the-fly <strong>result calculations</strong> based on user's choices, and <strong>auto redirecting</strong> after completion. In addition, the results only mattered to the user and not to us (we would not need to store all their answers in a database)."
+        "content": "Many online surveying tools exist like Survey Monkey, Google Forms, and Typeform. But none allowed quite the customizability we were looking for. We needed <strong><u>email client integration</u></strong>, on-the-fly <strong><u>result calculations</u></strong> based on user's choices, and <strong><u>auto redirecting</u></strong> after completion. In addition, the results only mattered to the user and not to us (we would not need to store all their answers in a database)."
       },
       {
         "component": "Body",
-        "content": "I requested the team allow me to build a custom-coded webpage on our site that would house the whole quiz. I was confident we would have MUCH greater flexibility to create something truly unique and \"Techless\", that met all our needs, and ticked all the boxes of the project scope, by going with a custom-coded solution rather than using one of the stock options. Both the cost-savings from not using those tools and the better user experience were tradeoffs we were willing to make in the end."
+        "content": "I suggeted the team build a custom-coded quiz interface. I was confident we would have MUCH greater flexibility to create something truly unique and \"Techless\" this way and could meet all the needs within our project scope. We would not have to pay for an advanced surveying tool and could have a stronger brand presence this way."
+      },
+      {
+        "component": "Subheading",
+        "content": "The Interface"
       },
       {
         "component": "Image",
@@ -248,28 +313,32 @@ const work = [
       },
       {
         "component": "Body",
-        "content": "I kept things simple, by implementing a basic paging system, in which each question resided on a different \"page\". By interacting with the interface, users can \"page through\" each question until they get to the end of the survey."
+        "content": "We kept things simple. We implemented a basic paging system, in which each question resided on a different \"page\". Users could focus on one question at a time and the system would automatically \"page through\" each question until they got to the end. Below is the code written to handle the paging system."
       },
       {
         "component": "Image",
         "source": "quiz/design-details/paging-system-code.jpg",
-        "alt": "paging system code"
+        "alt": "paging system code",
       },
       {
         "component": "Body",
-        "content": "The main UI for the web app is also very simple, both mobile friendly and user friendly. All questions are \"Yes\" or \"No\" questions, and the buttons for the submission stays in the same place on all pages. A simple tally system keeps track of what question the user is on. And page elements visually transition with smooth welcoming animations. These were all things we learned over time would make the interface more inviting and completable for users."
+        "content": "Another way we kept things simple was by making all questions \"Yes\" or \"No\". This made it easier to calculate the user's persona at the end rather than using multiple choice questions. We also didn't include a forward or back button, though we initially planned to. We determined the buttons weren't necessary for this specific application, and cutting them kept the interface even cleaner."
+      },
+      {
+        "component": "Body",
+        "content": "Other page visuals included the question counter at the top and the questions themselves. To ensure smooth, delightful page transition, we made sure the height of the question box was always the same so that the yes and no buttons didn't move. We also made questions slide out and into place to visually give the user the feeling of moving forward. These were all things we learned over time would make the interface more engaging and completable for users."
       },
       {
         "component": "Body",
         "content": "We were able to stick completely with the Techless brand colors: shades of warm grays and a rust-like accent color. Elements could also perfectly mimic user interface elements from the main website because this was built custom."
       },
       {
-        "component": "Subheading",
-        "content": "Email Funnel"
+        "component": "Heading",
+        "content": "Email Marketing Funnel"
       },
       {
         "component": "Body",
-        "content": "Upon finishing the quiz questions, users were required to give an email to see their quiz results. We used Mailchimp's customer journeys to set up triggered automations that send 2 or 3 email touchpoints to engage individuals who took the quiz. Based on the user's awarded persona, they would receive different followup emails."
+        "content": "Upon finishing the quiz, users were presented with a form in which to submit their email address to get their quiz results. We used Mailchimp's Customer Journeys to automate the delivery of re-engagement emails to individuals who took the quiz. Based on the user's awarded persona, they would receive different followup emails."
       },
       {
         "component": "Image",
@@ -277,29 +346,38 @@ const work = [
         "alt" :"results screen"
       },
       {
-        "component": "Subheading",
+        "component": "Body",
+        "content": "This was a critical part to our tool that we could not accomplish without the custom build."
+      },
+      {
+        "component": "Heading",
         "content": "Development"
       },
       {
-        "component": "Body",
-        "content": "I'd like to take a minute to highlight just a few of the development items I worked through when building this tool. The first item is <u>calculating</u> the quiz results."
+        "component": "Subheading",
+        "content": "Quiz Calculations"
       },
       {
         "component": "Image",
+        "customClass": "smaller",
         "source": "quiz/design-details/calculate.jpg",
         "alt": "image or code used for calculating"
       },
       {
         "component": "Body",
-        "content": "In short, I wrote a script that runs on the final page of the quiz. What it does is read the results (r) from each of the 7 questions the user submitted and adjust the scores for each of the personas based on their answer. Which ever is highest will then be selected as their persona assignment."
+        "content": "I worked through the development of a script that runs on the final page of the quiz to determine which persona to award the user. The script analyzes the quiz \"Results\" (r) from the 7 questions and adjusts the scores for each of the personas based on their answer. Which ever score is highest will then be selected as their persona assignment."
       },
       {
         "component": "Body",
-        "content": "This isn't a highly technical or serious program, so it was important not to overthink the calculations and just let it run. That said, I did have to consider how the user's answer might effect their outcome. For that reason, I spent some time working on refining those calculations until it made the most sense."
+        "content": "I spent some time refining the calculation mechanism to make sure the results made sense based on user's answers. But I also tried not to overthink it since the quiz itself was lighthearted and non-critical."
+      },
+      {
+        "component": "Subheading",
+        "content": "Email Submission Wall"
       },
       {
         "component": "Body",
-        "content": "Lastly, I had to spend some serious time working through implementing a <u>email submission wall</u>. Because some of the code comes straight from Mailchimp, and their API has to run certain calls when registering new emails, I need to get a callback before I proceed to the last page of the quiz, then redirecting the user to a specific Techless.com landing page based on their quiz result."
+        "content": "Implemention of an email submission wall was a critical challenge to developing this custom-coded quiz. Because the Mailchimp API has to run certain calls when registering new email addresses, I needed to get a specific return from their scripts to proceed to the last page of the quiz, where redirecting occurs and results shown."
       },
       {
         "component": "Image",
@@ -308,11 +386,11 @@ const work = [
       },
       {
         "component": "Body",
-        "content": "You'll see from the validation code above that I was able to hack this system to work by requiring the function to receive back very specific text into the Mailchimp field with the ID \"mce-success-response\". With the right text in place, the program can move forward."
+        "content": "You'll see from the validation code above that I was able to validate a successful email submission by testing the text written into the Mailchimp field with the ID \"mce-success-response\" that gets updated after the API call is triggered. With the right text in place, the program can move forward."
       },
       {
         "component": "Body",
-        "content": "It's worth noting that I'm fully aware that the solution I came up with at that time was not really the best. Anyone privvy enough to javascript could easily read this and skip the email signup. But for the majority of our users, I didn't have reason to anticipate that, and the ramifications would be minimal since the content was not sensitive. It's important to realise when there is reason to take on such battles as making a full-proof system that cannot be hacked, but this was a time where it didn't matter for our need."
+        "content": "It's worth noting that I'm fully aware the solution I came up with is not full proof in preventing people from moving forward to the last screen. Anyone privvy with javascript could easily skip the email signup. But, I didn't have reason to anticipate that the majority of our users would try this, and believed the ramifications would be minimal since the content was not sensitive in any way. It's important to realise when to take extra precaution and when to let go of imperfect implementation for the sake of getting a product out the door. We've had no issues with this implementation."
       },
       {
         "component": "Subheading",
@@ -320,7 +398,7 @@ const work = [
       },
       {
         "component": "Body",
-        "content": "Overall, I was very pleased with the end result. We created a fun, engaging, evergreen marketing piece that's distinct to Techless while spending minimal amounts of money on the development of the tool. If you haven't had a chance, I'd encourage you to try and take the quiz. <a href=\"https://nicholasburgher.github.io/quiz/index2.html\">Techaddictionquiz.com</a>."
+        "content": "Overall, I was very pleased with the end result. We created a fun, engaging, evergreen marketing piece that's distinct to Techless while spending minimal amounts of money on the development of the tool. If you haven't had a chance, I'd encourage you to try and take the quiz found <a href=\"https://nicholasburgher.github.io/quiz/index2.html\">here</a>."
       },
     ]
   },
@@ -329,6 +407,7 @@ const work = [
     "title": "Animation Showcase",
     "skills": "Graphic Design | Animation | Scripting",
     "date": `${new Date().getFullYear()}`,
+    "date": "2015 - Present",
     "path": "animations",
     "graphic": "anim-bg.jpg",
     "content": [
@@ -344,7 +423,7 @@ const work = [
       {
         "component": "Body",
         "design": "centered",
-        "content": "This is a collection of some of the more interesting animation projects I have created. My animation style is fun, light-hearted, punchy. I've worked on animations with Photoshop, AfterEffects, Resolve, and CSS."
+        "content": "This collection of animation projects shows my fun, light-hearted, punchy style for motion graphics creation. I enjoy using various tools like Photoshop, AfterEffects, Resolve, and CSS to build unique and engaging visual experiences for brands and products."
       },
       {
         "component": "Subheading",
@@ -370,7 +449,7 @@ const work = [
       },
       {
         "component": "Body",
-        "content": "Taking the illustration I created for the <a href=\"./tech-addiction-quiz\">Tech Addiction Quiz</a>, I animated the \"smartphone disciple\" character and added supporting text to drive interest in taking the online quiz.",
+        "content": "Taking one of the illustrations created for the <a href=\"./tech-addiction-quiz\">Tech Addiction Quiz</a>, I animated our \"smartphone disciple\" character and added supporting text for a Facebook Ad.",
         "design": "centered caption"
       },
       {
@@ -384,7 +463,7 @@ const work = [
       },
       {
         "component": "Body",
-        "content": "Bumper video for \"Techless Talks\" video series. Full sequence production including visual art direction, pacing, animation, and audio selection. I did not do the final Techless logo animation. Instead see below for a Techless logo animation I did do.",
+        "content": "This was an intro for the \"Techless Talks\" video series. I was involved in the full production of this sequence, including visual art direction, pacing, animation, and audio selection.",
         "design": "centered caption"
       },
       {
@@ -397,7 +476,7 @@ const work = [
       },
       {
         "component": "Body",
-        "content": "Originally built for use within a slide presentation with the Sexual Intergrity Leaderhsip Summit. This version of the Techless logo was animated from line data and utilized physics-based keyframing in AfterEffects to give it some added life.",
+        "content": "Originally built for use within a slide presentation with the Sexual Intergrity Leaderhsip Summit, this version of the Techless logo was animated from line data and utilized physics-based keyframing in to give it life.",
         "design": "centered caption"
       },
       {
@@ -423,7 +502,7 @@ const work = [
       },
       {
         "component": "Body",
-        "content": "Status Auto Detailing in Springfield MO. Animation created in AfterEffects using complex mask groups, smooth keyframe interpolation, expressions, and 3D rotation.",
+        "content": "Status Auto Detailing in Springfield MO. Animation was created in AfterEffects using complex mask groups, smooth keyframe interpolation, expressions, and 3D rotation.",
         "design": "centered caption"
       },
       {
@@ -450,7 +529,7 @@ const work = [
       },
       {
         "component": "Body",
-        "content": "This clever SVG animation was designed in Figma first, then exported to code. With CSS, I was able to animate specific parts of the image in order to have our character move within the space. Building an animation in this way is a much better alternative to GIFs and embedded videos for web implementations, and also can be a lot sharper when rendered to the screen.",
+        "content": "This clever SVG animation was designed in Figma first, then exported to code. With CSS, I was able to animate specific parts of the illustration in order to have our character move within the space. Building an animation in this way is a much better alternative to GIFs and embedded videos for web implementations because the file size is so much smaller and the resolution infinitely scalable.",
         "design": "centered caption"
       },
       {
@@ -463,7 +542,7 @@ const work = [
       },
       {
         "component": "Body",
-        "content": "Created for a website header video, this looping animation was designed to loop continuously on the Techless homepage to quickly showcase the Wisephone product to first-time visitors. With AfterEffects, I was able to chain the animation of one object to another and set an offset value so that elements moved in a wave-like pattern.",
+        "content": "Created for a website header video, this looping animation was designed to loop continuously on the Techless homepage to quickly showcase the Wisephone product for first-time visitors. With AfterEffects, I was able to chain the animation of one object to the others and set an offset value so that elements moved in a wave-like pattern.",
         "design": "centered caption"
       }
     ]
@@ -478,12 +557,22 @@ const work = [
     "content": [
       {
         "component": "Title",
-        "content": "Building an Internal Tool"
+        "content": "Email Signature Builder Tool"
+      },
+      {
+        "component": "Subheading",
+        "design": "centered",
+        "content": "UX Design | Programming | Branding"
+      },
+      {
+        "component": "Body",
+        "design": "centered caption",
+        "content": "This internal tool resulted in time savings for team members and enhanced brand presence for the Dexter Solutions family of brands."
       },
       {
         "component": "Image",
         "source": "email-sig/email-signature-graphic.jpg",
-        "customClass": "smaller",
+        "customClass": "",
         "alt": "email signature tool illustrative graphic"
       },
       {
@@ -492,7 +581,7 @@ const work = [
       },
       {
         "component": "Body",
-        "content": "The idea of the \"Email Signature Builder Tool\" was far off when I started assisting in the creation of our Dexter Solutions' branded signature designs."
+        "content": "In 2014, multiple brands came under the same roof as \"Dexter Solutions.\" To enforce the name change and merge, our marketing team was tasked with the rebrand of the public-facing email signatures."
       },
       {
         "component": "Gallery",
@@ -501,18 +590,18 @@ const work = [
           {
             "source": "email-sig/early-1.jpg",
             "alt": "early dexter email signature",
-            "caption": "Old designs were inconsistent from brand to brand."
+            "caption": "Old designs were inconsistent from person to person."
           },
           {
             "source": "email-sig/early-2.jpg",
             "alt": "early dexter hospitality email signature with graphics",
-            "caption": "Different team membes had different addresses, logos, and data to share with clients."
+            "caption": "Different team members had different addresses, logos, and data to share with clients."
           }
         ]
       },
       {
         "component": "Body",
-        "content": "New, unified layouts were crafted by our marketing team and forwarded on to development to write the html code. They would feature a \"Dexter Solutions\" logo and required information displayed in a standardized format."
+        "content": "New, unified layouts were designed and forwarded to development to write the html code for each person. They would feature a \"Dexter Solutions\" logo or \"A S Hospitality\" and required information displayed in a standardized format."
       },
       {
         "component": "Body",
@@ -524,7 +613,15 @@ const work = [
       },
       {
         "component": "Body",
-        "content": "The job became more complex when operations requested to have corporate headshots included for the majority of our users. Emailing over a blank signature and expecting sales members to add all the components, especially an image, was out of the question. This would be too difficult for team members to accomplish on their own and prone to brand inconsistencies. At this time, I began to explore a new approach to the request."
+        "content": "The job became more complex when operations requested to have corporate headshots included for the majority of our users. Emailing over a blank signature and expecting sales team members to add all the components, especially an image, was out of the question. This would be too difficult for team members to accomplish on their own and was prone to brand inconsistencies. At this time, I began to explore a new approach to the request."
+      },
+      {
+        "component": "Heading",
+        "content": "The Solution"
+      },
+      {
+        "component": "Body",
+        "content": "<br/>"
       },
       {
         "component": "Gallery",
@@ -544,23 +641,41 @@ const work = [
       },
       {
         "component": "Body",
-        "content": "With some basic understanding of Javascript, I knew it was possible to change the contents of various elements on a click action. This gave me the idea of using a form to dynamically update the contents of the signature design. With lots of research and comprehensive testing, I was able to put together a demo for our team that met the needs and included each user's headshot! We quickly launched the tool company-wide to ensure all users could be on-brand with their email messaging."
+        "content": "With a relatively basic understanding of Javascript at that time, I knew it was possible to dynamically change the contents of a webpage based on user input. This gave me the idea to create a webpage where team members could update their own email signatures without needing to involve Marketing or Development."
+      },
+      {
+        "component": "Combination",
+        "design": "image-one-half",
+        "title": " ",
+        "content": "With lots of research and comprehensive testing, I was able to put together a demo for our team that met the needs and included each user's headshot! Team members could enter in their personal information to the web form on the landing page that would automatically update the design of the signature. We quickly launched the tool company-wide to ensure all users could be on-brand with their email messaging.",
+        "source": "email-sig/signature-form-screenshot.jpg",
+        "alt": "Email Signature Builder Tool: form",
+        "caption": ""
+      },
+      {
+        "component": "Subheading",
+        "content": "Further Development"
       },
       {
         "component": "Body",
-        "content": "We pushed the \"Email Signature Builder Tool\" a little farther by also including customizable branding options and marketing banners for different use cases. Also, a text-only version was included for some systems that don't accept imagery. In addition, all variables can be saved into the URL string by clicking \"Save\" or the \"I\" beam. This makes it possible for all users to have their own unique url to come back to should they need to make an update to their signature in the future."
+        "content": "We expanded the capabilities of the \"Email Signature Builder Tool\" over time as needs arose. Beyond adding more team member headshots, they were given a few additional branding options such as various logo support and optional marketing banners for different use cases. I also added support for on-brand text-only signatures, which were needed for certain systems."
       },
       {
         "component": "Body",
-        "content": "When you <a href=\"../assets/signature/Email%20Signature%20Builder%20Tool.html\" target=\"_blank\">check out the tool</a>, try using the email address, \"nburgher@dextersolutions.net\". This will make my headshot appear!"
+        "content": "In addition, a save feature was added that would embed the user's input values into the URL string. To do this, they can click \"Save\" or the \"I\" beam at the top of the interface. This made it possible for team members to have their own unique url to come back to should they need to make an update to their signature in the future. <strong>(This feature is currently not working on portfolio site.)</strong><br/><br/>"
       },
       {
         "component": "Button",
-        "destination": "../assets/signature/Email%20Signature%20Builder%20Tool.html",
+        "destination": "./assets/signature/Email%20Signature%20Builder%20Tool.html",
         "content": "Check out the Tool",
         "target": "_blank",
         "design": "button-1"
       },
+      {
+        "component": "Body",
+        "design": "centered caption",
+        "content": "<br/>When you <a href=\"./assets/signature/Email%20Signature%20Builder%20Tool.html\" target=\"_blank\">check out the tool</a>, try using my old email address, \"nburgher@dextersolutions.net\". This will make my headshot appear!"
+      }
     ]
   }
 ]

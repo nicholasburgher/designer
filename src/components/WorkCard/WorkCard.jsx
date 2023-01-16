@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom';
 function WorkCard(props) {
   const navigate = useNavigate();
   return (
-    <div className="WorkCard" id={props.id} onClick={() => navigate(props.to)}>
+    <div className="WorkCard" id={props.id} onClick={() => navigate(`../${props.to}`)}>
       <div
         className="WorkCard_Background"
         style={{

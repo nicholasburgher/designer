@@ -5,7 +5,7 @@ import CoverPage from "./CoverPage";
 import Work from "./Work";
 import BrandedHeader from "./components/navigation/BrandedHeader/BrandedHeader";
 import WorkPageTemplate from "./templates/WorkPageTemplate";
-
+import AboutPageTemplate from "./templates/AboutPageTemplate";
 import work from "./content/work";
 
 
@@ -16,11 +16,12 @@ function App() {
       <BrandedHeader />
       <div className="content">
         <Routes>
-          <Route path="/" element={<CoverPage />} />
+          <Route path="/" element={<div><CoverPage /><Work /></div>} />
+          <Route path="about" element={<AboutPageTemplate index="0" />} />
           <Route path="work/*" element={<Work />} />
           {work.map((workItem, index) => {
             return (
-              <Route path={`work/${workItem.path}`} element={<WorkPageTemplate title={workItem.title} index={index} />} />
+              <Route path={`${workItem.path}`} element={<WorkPageTemplate title={workItem.title} index={index} />} />
             )
           })}
         </Routes>
