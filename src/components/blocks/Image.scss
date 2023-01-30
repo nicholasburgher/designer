@@ -8,6 +8,9 @@
     &.smaller {
         padding: 5% 16%;
     }
+    &.w1024 {
+        //max-width: 1024px;
+    }
 }
 
 @media only screen and (min-width: 700px) {

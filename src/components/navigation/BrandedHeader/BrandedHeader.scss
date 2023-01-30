@@ -3,12 +3,13 @@
 
 .Header {
     position: fixed;
-    padding: 48px 12px 12px;
-    top: -36px;
+    padding: 46px 12px 12px;
+    top: -32px;
     color: $theme_primary;
     font-weight: 700;
     font-size: 1.25rem;
     width: 100vw;
+    z-index: 1;
     background: rgba($theme_background, .4);
     backdrop-filter: blur(14px);
     -webkit-backdrop-filter: blur(14px);

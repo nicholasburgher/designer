@@ -55,7 +55,7 @@ h3 {
 .cover-page {
   //height: calc(100vh - 72px);
   display: grid;
-  grid-template-rows: 2fr 1fr;
+  //grid-template-rows: 6fr 1fr;
   place-items: center;
   animation: fadeIn ease-in-out 700ms, dropIn ease-in-out 700ms;
 
