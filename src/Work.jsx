@@ -7,12 +7,12 @@ import work from "./content/work";
 
 function Work() {
   return (
-    <div>
+    <div style={{maxWidth: "1024px", margin: "0 auto"}}>
       <PageTitle content="Featured Projects" />
       <div className="workTable">
         {work.map((workItem) => {
           return (
-            <WorkCard key={workItem.key} id={workItem.key} title={workItem.title} skills={workItem.skills} date={workItem.date} to={workItem.path} graphic={workItem.graphic}/>
+            <WorkCard key={workItem.key} id={workItem.key} title={workItem.title} skills={workItem.skills} date={workItem.date} to={workItem.path} graphic={workItem.graphic} graphicReposition={workItem.graphicReposition}/>
           )
         })}
       </div>

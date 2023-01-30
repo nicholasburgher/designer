@@ -14,7 +14,7 @@ function WorkCard(props) {
           bottom: "0px",
           left: "0px",
           backgroundImage: `url(${process.env.PUBLIC_URL + "/assets/images/" + props.graphic})`,
-          backgroundPosition: "center",
+          backgroundPosition: `${(props.graphicReposition ? props.graphicReposition : "center")}`,
           backgroundSize: "cover",
           opacity: ".6"
         }}

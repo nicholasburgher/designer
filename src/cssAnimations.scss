@@ -7,6 +7,15 @@
     }
 }
 
+@keyframes fadeIn_to70 {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: .7;
+    }
+}
+
 @keyframes dropIn {
     0% {
         transform: translateY(-30px);

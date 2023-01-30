@@ -4,6 +4,7 @@ import { useNavigate } from "react-router-dom";
 import work from "../content/work";
 //Builder
 import buildBlock from "../scripts/buildBlock";
+import BackTo from "../components/navigation/BackTo/BackTo";
 
 function WorkPageTemplate(props) {
   const navigate = useNavigate();
@@ -15,6 +16,7 @@ function WorkPageTemplate(props) {
       <section className="article-content">
         {work[props.index].content && work[props.index].content.map(buildBlock)}
       </section>
+      <BackTo />
       <Footer />
     </div>
   )

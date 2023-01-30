@@ -1,0 +1,24 @@
+@import "../../../cssVariables.scss";
+@import "../../../cssAnimations.scss";
+
+.backto-fab {
+    position: fixed;
+    bottom: $base_unit;
+    bottom: 0;
+    right: $base_unit;
+    button {
+        animation: fadeIn_to70 ease-in-out 500ms;
+        border: none;
+        background: $theme_background;
+        padding: 1rem;
+        @include txt_default;
+        font-weight: 600;
+        cursor: pointer;
+        border-radius: 6px 6px 0 0;
+        opacity: 0.7;
+        transition: $standard_transition;
+        &:hover {
+            opacity: 1;
+        }
+    }
+}

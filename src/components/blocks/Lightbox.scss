@@ -8,7 +8,7 @@
     z-index: 1;
     color: black;
     background: white;
-    height: 500px;
+    min-height: 500px;
     width: 500px;
     border-radius: calc(#{$base_unit} / 4);
     opacity: 0;
@@ -43,13 +43,14 @@
         transform: rotate(45deg);
         position: absolute;
         opacity: 0;
-        top: -1rem;
+        top: -2rem;
         right: 1rem;
         cursor: pointer;
-        transition: all ease-in-out 200ms;
+        transition: all ease-in-out 200ms 200ms;
     }
     img {
         width: 100%;
+        pointer-events: none;
     }
     .caption {
         background: rgba($theme_background, 1);

@@ -9,3 +9,11 @@
         padding: 5% 16%;
     }
 }
+
+@media only screen and (min-width: 700px) {
+    .image {
+        &.smaller {
+            padding: 32px 100px;
+        }
+    }
+}

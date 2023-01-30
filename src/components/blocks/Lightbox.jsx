@@ -11,8 +11,16 @@ function Lightbox(props) {
             className="close">
               +
             </div>
-            <img src={process.env.PUBLIC_URL + "/assets/images/" + props.imgAddress} />
-            <div className="caption">{props.imgCaption}</div>
+            <img src={process.env.PUBLIC_URL + "/assets/images/" + props.lightboxArray[props.currentId].source} />
+            <div className="caption">
+            {props.currentId > 0 ? <button onClick={() => {
+                props.onPrevious();
+            }}>Previous</button> : ""}
+            {props.lightboxArray[props.currentId].caption}
+            {props.currentId < props.lightboxArray.length - 1 ? <button onClick={() => {
+                props.onNext();
+            }}>Next</button> : ""}
+            </div>
         </div>
     )
 }
