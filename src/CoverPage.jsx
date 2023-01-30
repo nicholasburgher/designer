@@ -5,7 +5,7 @@ function CoverPage() {
   const navigate = useNavigate();
   return (
     <div class="cover-page">
-      <div onClick={() => navigate('about')} style={{ cursor: "pointer" }} style={{ textAlign: "center", width: "75%" }}>
+      <div onClick={() => navigate('about')} style={{ cursor: "pointer", textAlign: "center", width: "75%" }}>
         <Image source="NB_Designer_Logo.svg" customClass="w1024"/>
         
       </div>
