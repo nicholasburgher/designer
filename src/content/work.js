@@ -1024,7 +1024,7 @@ const work = [
           {
             "source": "email-sig/nb_ex.jpg",
             "alt": "new branded email signature example",
-            "caption": "Headshopts were loaded in based on the email address."
+            "caption": "Headshots dynamically load in based on the email address field."
           },
           {
             "source": "email-sig/am_ex.jpg",

@@ -7,11 +7,11 @@
     transform: translate(-50%, -60%);
     z-index: 1;
     color: black;
-    background: white;
-    min-height: 500px;
+    //min-height: 500px;
     max-height: 100%;
     max-width: 100%;
     width: 500px;
+    background: white;
     border-radius: calc(#{$base_unit} / 4);
     opacity: 0;
     pointer-events: none;
@@ -49,14 +49,78 @@
         right: 1rem;
         cursor: pointer;
         transition: all ease-in-out 200ms 200ms;
+        z-index: 1;
     }
     img {
+        border-radius: calc(#{$base_unit} / 4);
+        display: block;
         width: 100%;
         pointer-events: none;
     }
     .caption {
-        background: rgba($theme_background, 1);
+        background: rgba($theme_background, .8);
+        backdrop-filter: blur(9px);
+        -webkit-backdrop-filter: blur(9px);
         border-radius: calc(#{$base_unit} / 4);
         padding: calc(#{$base_unit}/2);
+    }
+    button[class*='button'] {
+        position: fixed;
+        bottom: 50%;
+        left: 50%;
+        transform: translate(-100%, 50%);
+        height: calc(2rem + 48px);;
+        width: calc(2rem + 48px);
+        //border-radius: 50%;
+        border: none;
+        background: rgba(20, 20, 20, .9);
+        cursor: pointer;
+        color: $theme_background;
+        font-size: 2rem;
+        @include txt_default;
+        padding-bottom: 4px;
+        opacity: .5;
+        transition: $standard_transition;
+        &:hover {
+            opacity: .9;
+        }
+        &::after {
+            content: "";
+            border: solid 3px rgba($theme_background, .8);
+            border-right: none;
+            border-bottom: none;
+            display: block;
+            height: .625rem;
+            width: .625rem;
+            position: fixed;
+            left: 50%;
+            top: 50%;
+            transform: translate(-25%, -50%) rotate(-45deg);
+        }
+        &[class*='prev'] {
+            left: 0%;
+            transform: translate(0%, 50%);
+        }
+        &[class*='next'] {
+            left: 100%;
+            &::after {
+                transform: translate(-75%, -50%) rotate(135deg);
+            }
+        }
+    }
+}
+@media only screen and (min-width: 415px) {
+    .lightbox {
+        button[class*='button'] {
+            height: 100%;
+            bottom: 0%;
+            opacity: .7;
+            &[class*='prev'] {
+                transform: translate(-100%, 0%);
+            }
+            &[class*='next'] {
+                transform: translate(0%, 0%);
+            }
+        }
     }
 }
