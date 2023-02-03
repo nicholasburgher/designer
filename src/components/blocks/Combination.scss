@@ -18,7 +18,16 @@
             order: -1;
         }
     }
+    &[class*='top'] {
+        align-items: flex-start;
+    }
     img {
         border-radius: 6px;
+    }
+}
+
+@media only screen and (max-width: 415px) {
+    .combination-block {
+        grid-template-columns: 1fr !important;
     }
 }

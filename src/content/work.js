@@ -96,7 +96,6 @@ const work = [
       {
         "component": "Combination",
         "design": "body-two-thirds",
-        "title": " ",
         "content": "We divided content into separate pages for the different product teams, including one specific to WiseOS Components. This made it a lot easier to find UI elements when building new interfaces and to communicate their purpose.",
         "source": "wisephone/FigmaPages.jpg",
         "alt": "picture showing figma pages for our design system"
@@ -190,7 +189,7 @@ const work = [
       },
       {
         "component": "Body",
-        "content": "Learn more about Wisephone at <a href=\"techless.com\">Techless.com</a>.<br/><br/>"
+        "content": "Learn more about Wisephone at <a href=\"https://techless.com\" target=\"_blank\">Techless.com</a>.<br/><br/>"
       }
     ]
   },
@@ -442,146 +441,148 @@ const work = [
   },
   {
     "key": "w03",
-    "title": "Animation Showcase",
-    "skills": "Graphic Design | Animation | Scripting",
-    "date": `${new Date().getFullYear()}`,
-    "date": "2015 - Present",
-    "path": "animations",
-    "graphic": "anim-bg.jpg",
+    "title": "Mandy Lynn Plans",
+    "skills": "Graphic Design | Branding | Illustration",
+    "date": "",
+    "path": "icon-sets",
+    "graphic": "icon-sets/MandyLynn_Cover.png",
+    "graphicReposition": "50% 50%",
     "content": [
       {
         "component": "Title",
-        "content": "Animation Showcase"
+        "content": "Mandy Lynn Plans Sticker Designs"
       },
       {
         "component": "Subheading",
         "design": "centered",
-        "content": "Graphic Design | Animation | Scripting"
+        "content": "Graphic Design | Branding | Illustration"
       },
       {
-        "component": "Body",
-        "design": "centered",
-        "content": "This collection of animation projects shows my fun, light-hearted, punchy style for motion graphics creation. I enjoy using various tools like Photoshop, AfterEffects, Resolve, and CSS to build unique and engaging visual experiences for brands and products."
-      },
-      {
-        "component": "Subheading",
-        "content": "NBD Animated Logo"
+        "component": "Heading",
+        "content": "Overview"
       },
       {
         "component": "Image",
-        "source": "../videos/animations/UI-Animation-2.gif",
-        "alt": "Nick Burgher Design - Animated Logo"
+        "source": "icon-sets/MandyLynn_IconPrinting.png",
+        "alt": "image of Mandy Lynn plans product that utilizes icon designs made by Nick Burgher"
       },
       {
         "component": "Body",
-        "content": "Created with love by hand in Photoshop 7.0 and ImageReady<br/>built frame-by-frame!",
-        "design": "centered caption"
+        "content": "In 2020, my friend Amanda asked if I could help her with designing a series of bespoke sticker designs for her business, <a href=\"https://mandylynnplans.com\" target=\"_blank\">Mandy Lynn Plans</a>. She offers unique, custom-designed materials for popular planners, such as those offered by Hobonichi and Wonderland 222. I was excited to collaborate with her on 30 fun and joyful sticker icons she was able to sell in a variety of&nbsp;colorways to her clientele."
       },
       {
-        "component": "Subheading",
-        "content": "Tech Addiction Quiz Social Ad"
-      },
-      {
-        "component": "Video",
-        "source": "animations/TechlessQuiz_Ad_compressed.mov"
+        "component": "Image",
+        "source": "icon-sets/MandyLynn_Samples.png",
+        "alt": "a sampling of graphics created for MLP"
       },
       {
         "component": "Body",
-        "content": "Taking one of the illustrations created for the <a href=\"./tech-addiction-quiz\">Tech Addiction Quiz</a>, I animated our \"smartphone disciple\" character and added supporting text for a Facebook Ad.",
-        "design": "centered caption"
+        "design": "caption centered",
+        "content": "A few of my favorite designs we did."
       },
       {
-        "component": "Subheading",
-        "content": "Techless Talks Bumper"
-      },
-      {
-        "component": "Video",
-        "source": "animations/TTBumper_compressed.mov",
-        "autoplay": "autoplay"
-      },
-      {
-        "component": "Body",
-        "content": "This was an intro for the \"Techless Talks\" video series. I was involved in the full production of this sequence, including visual art direction, pacing, animation, and audio selection.",
-        "design": "centered caption"
-      },
-      {
-        "component": "Subheading",
-        "content": "Animated Techless Logo"
-      },
-      {
-        "component": "Video",
-        "source": "animations/TechlessAnimatedLogo_compressed.mov"
-      },
-      {
-        "component": "Body",
-        "content": "Originally built for use within a slide presentation with the Sexual Intergrity Leaderhsip Summit, this version of the Techless logo was animated from line data and utilized physics-based keyframing in to give it life.",
-        "design": "centered caption"
-      },
-      {
-        "component": "Subheading",
-        "content": "Dexter Solutions Logo Animation"
+        "component": "Heading",
+        "content": "Final Product"
       },
       {
         "component": "YoutubeEmbed",
-        "embedId": "K-C-Co1u7sI"
+        "embedId": "IbupDDkqrnc",
+        "startAt": "62"
+      },
+      {
+        "component": "Gallery",
+        "galleryType": "masonry",
+        "content": [
+          {
+            "source": "icon-sets/ML_sticker1.jpg",
+            "alt": "picture of product: laundry basket"
+          },
+          {
+            "source": "icon-sets/ML_sticker2.jpg",
+            "alt": "picture of product: tea cup"
+          },
+          {
+            "source": "icon-sets/ML_sticker3.jpg",
+            "alt": "picture of product: spray bottle"
+          },
+          {
+            "source": "icon-sets/ML_sticker4.jpg",
+            "alt": "picture of product: church"
+          },
+          {
+            "source": "icon-sets/ML_sticker5.jpg",
+            "alt": "picture of product: $ sign"
+          },
+          {
+            "source": "icon-sets/ML_sticker6.jpg",
+            "alt": "picture of product: television"
+          },
+          {
+            "source": "icon-sets/ML_sticker7.jpg",
+            "alt": "picture of product: mail envelope"
+          },
+          {
+            "source": "icon-sets/ML_sticker8.jpg",
+            "alt": "picture of product: coffee cup"
+          }
+        ]
+      },
+      {
+        "component": "Heading",
+        "content": "Design Process"
+      },
+      {
+        "component": "Combination",
+        "design": "body-one-third align-top",
+        "title": "Initial Concepts",
+        "content": "For each icon, I started by drawing out some initial concepts. I referenced photographs or physical objects. I tried to avoid looking at icons done by other people, in order to ensure my designs were unique, packed with fresh ideas of my own. I also had a specific hand-crafted look I was going for that I really leaned into. I tried to keep the creativity flowing by exploring unconventional poses and different visual elements to help the designs stand on their own.",
+        "source": "icon-sets/MandyLynn_PreliminarySketches_Book.jpg",
+        "alt": "Preliminary sketches of designs",
+        "caption": "Preliminary sketches and final design plan for the book icon. These were drawn in OneNote. I found the drawing limitations of the software helped me focus more on the design and less on the perfection of the illustration."
       },
       {
         "component": "Body",
-        "content": "Animation for Dexter Solutions branded videos. Built with AfterEffects.",
-        "design": "centered caption"
+        "content": "After finding a pose I liked, I would work on converting the shape to just one color. I would use the negative space in and around the object to add extra details like shadows. Once I worked out the one-color version, I would sketch the next icon in the set. This helped me stay creative while I worked and allowed me to see the whole set before I moved on to the vectorization process. It also allotted me extra time to tweak the designs and check consistency across the group, making the final product more cohesive."
+      },
+      
+      {
+        "component": "Image",
+        "source": "icon-sets/MandyLynn_DesignPreviews.jpg",
+        "alt": "Early previews of sticker drawings"
+      },
+      {
+        "component": "Body",
+        "design": "centered caption",
+        "content": "I tightly collaborated with Amanda to bring the product to life. We passed back many messages to discuss intricacies with the designs and clarify the vision. I would at times pass along early sketches to make sure we were heading in the right direction."
       },
       {
         "component": "Subheading",
-        "content": "Status Auto Detailing"
-      },
-      {
-        "component": "YoutubeEmbed",
-        "embedId": "9ywCsmroOgs"
+        "content": "Vectorization"
       },
       {
         "component": "Body",
-        "content": "Status Auto Detailing in Springfield MO. Animation was created in AfterEffects using complex mask groups, smooth keyframe interpolation, expressions, and 3D rotation.",
-        "design": "centered caption"
+        "content": "I created the final visuals with Figma! I chose Figma over Illustrator because it gave me greater control over batch processing the images. I was also able to create greater visual consistency because I could see and interact with every icon design at the same time. Mandy's team was able to use the jpg and SVG files exported from Figma to create all their sticker variations."
       },
       {
-        "component": "Subheading",
-        "content": "\"Sellable Units\" Stop Motion"
+        "component": "Image",
+        "source": "icon-sets/MandyLynn_FigmaProcess.jpg"
       },
       {
-        "component": "YoutubeEmbed",
-        "embedId": "xIras8B23Rs",
-        "startAt": "12"
+        "component": "Heading",
+        "content": "Conclusion"
       },
       {
-        "component": "Body",
-        "content": "Internal initiative, frame animation created with Nikon D750 and a lot of chocolate. Had to be created in reverse order because the video wraps each of the items into their wrappers. Fun fun.",
-        "design": "centered caption"
+        "component": "Combination",
+        "design": "one-third",
+        "content": "Mandy Lynn Plans continues to sell these icons in sticker packs available on <a href=\"https://www.etsy.com/shop/mandylynnplans?ref=return_to_search&section_id=26061476&page=1#items\" target=\"_blank\">Etsy</a>. Their \"print-on-demand\" services give them the flexibility to offer a very large selection of materials with minimal inventory costs. These icons continue to be a main staple to their product&nbsp;line.",
+        "source": "icon-sets/MandyLynn_Etsy.png"
       },
       {
-        "component": "Subheading",
-        "content": "SVG Web Animations"
-      },
-      {
-        "component": "Video",
-        "source": "animations/SVGAnim_compressed.mov"
-      },
-      {
-        "component": "Body",
-        "content": "This clever SVG animation was designed in Figma first, then exported to code. With CSS, I was able to animate specific parts of the illustration in order to have our character move within the space. Building an animation in this way is a much better alternative to GIFs and embedded videos for web implementations because the file size is so much smaller and the resolution infinitely scalable.",
-        "design": "centered caption"
-      },
-      {
-        "component": "Subheading",
-        "content": "\"3 Phones\" Animation"
-      },
-      {
-        "component": "Video",
-        "source": "animations/3Phones_Anim_compressed1080.mov"
-      },
-      {
-        "component": "Body",
-        "content": "Created for a website header video, this looping animation was designed to loop continuously on the Techless homepage to quickly showcase the Wisephone product for first-time visitors. With AfterEffects, I was able to chain the animation of one object to the others and set an offset value so that elements moved in a wave-like pattern.",
-        "design": "centered caption"
+        "component": "Button",
+        "destination": "https://www.etsy.com/shop/mandylynnplans?ref=return_to_search&section_id=26061476&page=1#items",
+        "content": "See Mandy Lynn Plans on Etsy",
+        "target": "_blank",
+        "design": "button-1"
       }
     ]
   },
@@ -797,6 +798,151 @@ const work = [
   },
   {
     "key": "w05",
+    "title": "Animation Showcase",
+    "skills": "Graphic Design | Animation | Scripting",
+    "date": `${new Date().getFullYear()}`,
+    "date": "2015 - Present",
+    "path": "animations",
+    "graphic": "anim-bg.jpg",
+    "content": [
+      {
+        "component": "Title",
+        "content": "Animation Showcase"
+      },
+      {
+        "component": "Subheading",
+        "design": "centered",
+        "content": "Graphic Design | Animation | Scripting"
+      },
+      {
+        "component": "Body",
+        "design": "centered",
+        "content": "This collection of animation projects shows my fun, light-hearted, punchy style for motion graphics creation. I enjoy using various tools like Photoshop, AfterEffects, Resolve, and CSS to build unique and engaging visual experiences for brands and products."
+      },
+      {
+        "component": "Subheading",
+        "content": "NBD Animated Logo"
+      },
+      {
+        "component": "Image",
+        "source": "../videos/animations/UI-Animation-2.gif",
+        "alt": "Nick Burgher Design - Animated Logo"
+      },
+      {
+        "component": "Body",
+        "content": "Created with love by hand in Photoshop 7.0 and ImageReady<br/>built frame-by-frame!",
+        "design": "centered caption"
+      },
+      {
+        "component": "Subheading",
+        "content": "Tech Addiction Quiz Social Ad"
+      },
+      {
+        "component": "Video",
+        "source": "animations/TechlessQuiz_Ad_compressed.mov"
+      },
+      {
+        "component": "Body",
+        "content": "Taking one of the illustrations created for the <a href=\"./tech-addiction-quiz\">Tech Addiction Quiz</a>, I animated our \"smartphone disciple\" character and added supporting text for a Facebook Ad.",
+        "design": "centered caption"
+      },
+      {
+        "component": "Subheading",
+        "content": "Techless Talks Bumper"
+      },
+      {
+        "component": "Video",
+        "source": "animations/TTBumper_compressed.mov",
+        "autoplay": "autoplay"
+      },
+      {
+        "component": "Body",
+        "content": "This was an intro for the \"Techless Talks\" video series. I was involved in the full production of this sequence, including visual art direction, pacing, animation, and audio selection.",
+        "design": "centered caption"
+      },
+      {
+        "component": "Subheading",
+        "content": "Animated Techless Logo"
+      },
+      {
+        "component": "Video",
+        "source": "animations/TechlessAnimatedLogo_compressed.mov"
+      },
+      {
+        "component": "Body",
+        "content": "Originally built for use within a slide presentation with the Sexual Intergrity Leaderhsip Summit, this version of the Techless logo was animated from line data and utilized physics-based keyframing in to give it life.",
+        "design": "centered caption"
+      },
+      {
+        "component": "Subheading",
+        "content": "Dexter Solutions Logo Animation"
+      },
+      {
+        "component": "YoutubeEmbed",
+        "embedId": "K-C-Co1u7sI"
+      },
+      {
+        "component": "Body",
+        "content": "Animation for Dexter Solutions branded videos. Built with AfterEffects.",
+        "design": "centered caption"
+      },
+      {
+        "component": "Subheading",
+        "content": "Status Auto Detailing"
+      },
+      {
+        "component": "YoutubeEmbed",
+        "embedId": "9ywCsmroOgs"
+      },
+      {
+        "component": "Body",
+        "content": "Status Auto Detailing in Springfield MO. Animation was created in AfterEffects using complex mask groups, smooth keyframe interpolation, expressions, and 3D rotation.",
+        "design": "centered caption"
+      },
+      {
+        "component": "Subheading",
+        "content": "\"Sellable Units\" Stop Motion"
+      },
+      {
+        "component": "YoutubeEmbed",
+        "embedId": "xIras8B23Rs",
+        "startAt": "12"
+      },
+      {
+        "component": "Body",
+        "content": "Internal initiative, frame animation created with Nikon D750 and a lot of chocolate. Had to be created in reverse order because the video wraps each of the items into their wrappers. Fun fun.",
+        "design": "centered caption"
+      },
+      {
+        "component": "Subheading",
+        "content": "SVG Web Animations"
+      },
+      {
+        "component": "Video",
+        "source": "animations/SVGAnim_compressed.mov"
+      },
+      {
+        "component": "Body",
+        "content": "This clever SVG animation was designed in Figma first, then exported to code. With CSS, I was able to animate specific parts of the illustration in order to have our character move within the space. Building an animation in this way is a much better alternative to GIFs and embedded videos for web implementations because the file size is so much smaller and the resolution infinitely scalable.",
+        "design": "centered caption"
+      },
+      {
+        "component": "Subheading",
+        "content": "\"3 Phones\" Animation"
+      },
+      {
+        "component": "Video",
+        "source": "animations/3Phones_Anim_compressed1080.mov"
+      },
+      {
+        "component": "Body",
+        "content": "Created for a website header video, this looping animation was designed to loop continuously on the Techless homepage to quickly showcase the Wisephone product for first-time visitors. With AfterEffects, I was able to chain the animation of one object to the others and set an offset value so that elements moved in a wave-like pattern.",
+        "design": "centered caption"
+      }
+    ]
+  },
+  {
+    "key": "w06",
     "title": "Email Signature Builder Tool",
     "skills": "UX Design | Programming | Branding",
     "date": "2017",

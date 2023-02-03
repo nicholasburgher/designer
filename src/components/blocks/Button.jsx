@@ -6,8 +6,7 @@ function Button(props) {
     return (
         <div className={props.design}>
             <a href={props.destination} target={props.target}>
-                <button
-            >{props.content}</button>
+                <button>{props.content}</button>
             </a>
         </div>
     )

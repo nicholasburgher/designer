@@ -2,12 +2,17 @@
 
 .WorkCard {
     background: rgba($theme_background, .4);
+    box-shadow: 0rem 0.25rem .5rem rgba($theme_accent_darker, .6);
     border-radius: 6px;
     padding: 0 16px;
     position: relative;
     overflow: hidden;
     min-height: 250px;
     cursor: pointer;
+    transition: $standard_transition;
+    &:hover {
+        background: rgba($theme_background, .8);
+    }
     .WorkCard_Content {
         position: absolute;
         top: 0px;

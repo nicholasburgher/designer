@@ -1,6 +1,8 @@
 @import "../../cssVariables.scss";
 
 .gallery {
+    margin: 0 auto;
+    padding: 1rem 0;
     &.masonry {
         display: flex;
         flex-flow: row wrap;
@@ -8,6 +10,7 @@
         justify-content: center;
         gap: 1rem;
         width: 100%;
+        max-width: 1024px;
         .image-group {
             width: calc((100% - 2rem - 1px)/3);
             img {
@@ -25,8 +28,7 @@
         flex-flow: row wrap;
         justify-content: space-between;
         gap: calc(#{$base_unit} / 2);
-        max-width: 700px;
-        margin: 0 auto;
+        max-width: $article_width;
         .image-group {
             width: 100px;
             img {
@@ -37,6 +39,14 @@
             p.caption {
                 display: none;
             }
+        }
+    }
+}
+
+@media only screen and (max-width: 415px) {
+    .gallery.masonry {
+        .image-group {
+            width: calc((100% - 2rem - 1px)/2);
         }
     }
 }

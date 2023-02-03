@@ -4,6 +4,7 @@
     display: grid;
     grid-template-columns: 1fr;
     gap: 16px;
+    gap: 1.5rem;
     animation: fadeIn ease-in-out 300ms, slideIn_bottom ease-in-out 500ms;
 }
 
