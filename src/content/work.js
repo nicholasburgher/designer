@@ -47,18 +47,18 @@ const work = [
           {
             "source": "wisephone/DSC_3967_WisephoneTexting.jpg",
             "alt": "Texting on Wisephone",
-            "caption": "Texting on Wisephone is familiar yet clean, with a bright, bloatless interface to fit user needs."
+            "caption": "Texting on Wisephone is familiar yet clean, with a bright, streamlined interface to fit user needs."
           },
           {
             "source": "wisephone/WisephoneCamera2-0.jpg",
             "alt": "Camera App",
-            "caption": "We revamped the Camera tool in late 2022 with a new interface and improvemed performance."
+            "caption": "We revamped the Camera tool in late 2022 with a new interface and improved performance."
           }
         ]
       },
       {
         "component": "Body",
-        "content": "However, early Wisephone builds lacked this level of consistency. Even though we were using modern design tools like Figma as our \"Source of Truth,\" we handn't quite discovered how to best deliver a consistent looking design in final output."
+        "content": "However, early Wisephone builds lacked this level of consistency. Even though we were using modern design tools like Figma as our \"Source of Truth,\" we hadn't quite discovered how to best deliver a consistent looking design in final output."
       },
       {
         "component": "Body",
@@ -70,7 +70,7 @@ const work = [
       },
       {
         "component": "Body",
-        "content": "Digging in, I found some team members believed cultural differences and language barriers were contributing to the innacurate design builds. They communicated that our developers required extremely rigid guidelines or else they would basically go rogue and build whatever they wanted. And with tight time constraints, we couldn't afford for developers to rebuild something twice or play guessing games."
+        "content": "Digging in, I found some team members believed cultural differences and language barriers were contributing to the inaccurate design builds. They communicated that our developers required extremely rigid guidelines or else they would basically go rogue and build whatever they wanted. And with tight time constraints, we couldn't afford for developers to rebuild something twice or play guessing games."
       },
       {
         "component": "Body",
@@ -78,7 +78,7 @@ const work = [
       },
       {
         "component": "Body",
-        "content": "Less convinced we had a personnel issue, my attention turned elsewhere; how good was our design documentation? Could our development team actually build the spec? Was Figma really a good source of truth?"
+        "content": "Instead of tightening the rules of conduct, I turned my attention towards the product design practice; how good was our design documentation? Could our development team actually build the spec? Was Figma really a good source of truth?"
       },
       {
         "component":"Heading",
@@ -784,7 +784,7 @@ const work = [
       },
       {
         "component": "Body",
-        "content": "It's worth noting that I'm fully aware the solution I came up with is not full proof in preventing people from moving forward to the last screen. Anyone privvy with javascript could easily skip the email signup. But, I didn't have reason to anticipate that the majority of our users would try this, and believed the ramifications would be minimal since the content was not sensitive in any way. It's important to realise when to take extra precaution and when to let go of imperfect implementation for the sake of getting a product out the door. We've had no issues with this implementation."
+        "content": "It's worth noting that I'm fully aware the solution I came up with is not foolproof in preventing people from moving forward to the last screen. Anyone privvy with javascript could easily skip the email signup. But, I didn't have reason to anticipate that the majority of our users would try this, and believed the ramifications would be minimal since the content was not sensitive in any way. It's important to realise when to take extra precaution and when to let go of imperfect implementation for the sake of getting a product out the door. We've had no issues with this implementation."
       },
       {
         "component": "Subheading",
