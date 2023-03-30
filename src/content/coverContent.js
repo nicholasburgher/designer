@@ -15,7 +15,7 @@ const coverContent = [
         "component": "Button",
         "content": "More About Me",
         "design": "button-1",
-        "destination": "/about"
+        "destination": "designer/about"
       }
     ]
   }
