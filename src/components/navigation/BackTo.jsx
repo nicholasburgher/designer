@@ -1,4 +1,3 @@
-import "./BackTo.scss";
 import { NavLink } from "react-router-dom";
 
 function BackTo() {

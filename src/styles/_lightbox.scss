@@ -1,12 +1,10 @@
-@import "../../cssVariables.scss";
-
 .lightbox {
     position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -60%);
     z-index: 1;
-    color: black;
+    color: $theme_primary;
     //min-height: 500px;
     max-height: 100%;
     max-width: 100%;

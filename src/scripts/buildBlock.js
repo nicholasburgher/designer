@@ -11,6 +11,12 @@ import Button from "../components/blocks/Button";
 import Video from "../components/blocks/Video";
 import YoutubeEmbed from "../components/blocks/YoutubeEmbed";
 
+//const Body = React.lazy(() => import('../components/blocks/Body'));
+//const Title = React.lazy(() => import('../components/blocks/Title'));
+//const Image = React.lazy(() => import('../components/blocks/Image'));
+//const Video = React.lazy(() => import('../components/blocks/Video'));
+
+
 function buildBlock(item) {
     switch (item.component) {
         case "Title":

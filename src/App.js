@@ -1,9 +1,9 @@
 import { Route, Routes } from "react-router-dom";
-import "./App.scss";
-import HamburgerMenu from "./components/navigation/HamburgerMenu/HamburgerMenu";
+import "./styles/App.scss";
+import HamburgerMenu from "./components/navigation/HamburgerMenu";
 import CoverPage from "./CoverPage";
 import Work from "./Work";
-import BrandedHeader from "./components/navigation/BrandedHeader/BrandedHeader";
+import BrandedHeader from "./components/navigation/BrandedHeader";
 import WorkPageTemplate from "./templates/WorkPageTemplate";
 import AboutPageTemplate from "./templates/AboutPageTemplate";
 import work from "./content/work";

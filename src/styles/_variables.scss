@@ -1,15 +1,35 @@
+//Previous Colors
+$bright-orange: #FF4B0A;
+$blue_primary: #003B80;
+$blue_link: #247FEB;
+$blue_dark: #0a2443;
+$blue_dark_shade: #213955;
+$blue_sky: #EDF7FA;
+$blue_sky_shade: #8EACC9;
+
+//Original Theme
 $theme_background: #FFF;
 $theme_primary: #333;
 $theme_accent: #95B7C2;
 $theme_accent: #90BBCC;
 $theme_accent_darker: hsl(195, 27%, 57%);
 
+//Rebased Theming
+$theme_background: $blue_sky;
+$theme_text: $blue_sky;
+$theme_primary: $blue_dark;
+$theme_accent: $blue_primary;
+$theme_accent_darker: $blue_dark_shade;
+
 $article_width: 700px;
+$header_height: 82px;
 $base_unit: 1rem;
 $marginH: 24px;
 $standard_transition: all ease-in-out 300ms;
 
+@import "media";
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800&family=Noto+Serif+Display:ital,wght@1,600&display=swap');
+
 
 @mixin txt_default {
     font-family: 'Inter', sans-serif;

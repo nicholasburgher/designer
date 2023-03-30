@@ -1,4 +1,3 @@
-import "./WorkCard.scss";
 import { useNavigate } from 'react-router-dom';
 
 function WorkCard(props) {

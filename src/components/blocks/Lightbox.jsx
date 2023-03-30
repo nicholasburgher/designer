@@ -1,5 +1,4 @@
 import React from "react";
-import "./Lightbox.scss";
 
 function Lightbox(props) {
     return (

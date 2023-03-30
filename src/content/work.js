@@ -1,4 +1,36 @@
 const work = [
+  /*{
+    "key": "w07",
+    "title": "Kirk Elliott PhD",
+    "skills": "UX/UI | Front-End Dev",
+    "date": "Feb 2023",
+    "path": "kirk-elliott",
+    "graphic": "wisephone/Wisephone_newBox.jpg",
+    "content": [
+      {
+        "component": "Title",
+        "content": "Kirk Elliott PhD Storage Landing Site"
+      },
+      {
+        "component": "Subheading",
+        "design": "centered",
+        "content": "UX/UI Design | Front-End Development"
+      },
+      {
+        "component": "Body",
+        "design": "full-width centered",
+        "content": "Kirk Elliott PhD helps clients leverage their finances to accomplish business goals and diversify their financial portfolio for long-term stability. One strategy they employee is the use of precious metals and precious metal IRAs."
+      },
+      {
+        "component": "Body",
+        "content": "Before we entered the picture, KEPHD made little mention of their storage options on their website. But with an ever growing portfolio of large clients requiring storage of precious metals, it became apparent they would need to provide key information to explain that side of the business."
+      },
+      {
+        "component": "Body",
+        "content": "I was placed in a unique position to craft a set of landing pages to attach for KEPHD"
+      }
+    ]
+  },*/
   {
     "key": "w01",
     "title": "Wisephone",

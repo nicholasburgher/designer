@@ -1,7 +1,7 @@
 import "./Work.scss";
 //import BrandedHeader from "./components/navigation/BrandedHeader/BrandedHeader";
-import WorkCard from "./components/WorkCard/WorkCard";
-import PageTitle from "./components/PageTitle/PageTitle";
+import WorkCard from "./components/WorkCard";
+import PageTitle from "./components/PageTitle";
 import Button from "./components/blocks/Button";
 import work from "./content/work";
 import Footer from "./components/Footer";
@@ -9,8 +9,9 @@ import Footer from "./components/Footer";
 function Work() {
   return (
     <div>
-      <div style={{maxWidth: "1024px", margin: "0 auto"}}>
-        <PageTitle content="Featured Projects" />
+      <article style={{maxWidth: "1024px", margin: "0 auto"}}>
+        <div className="spacer"></div>
+        <PageTitle content="Work" />
         <div className="workTable">
           {work.map((workItem) => {
            return (
@@ -26,7 +27,7 @@ function Work() {
           }}>
           <Button design="button-1" destination="https://dribbble.com/nicholasburgher" target="_blank" content="See More on Dribbble" />
         </div>
-      </div>
+      </article>
       <Footer />
     </div>
     

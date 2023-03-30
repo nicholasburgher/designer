@@ -1,0 +1,122 @@
+
+
+@import "variables";
+@import "animations";
+@import "brandedHeader";
+@import "hamburgerMenu";
+@import "coverPage";
+@import "pageTitle";
+@import "workCard";
+@import "button";
+@import "gallery";
+@import "image";
+@import "lightbox";
+@import "backTo";
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+// BFD4DA
+body {
+  background: #BFD4DA;
+  height: 100vh;
+
+  .App {
+    color: $theme_text;
+    background: $theme_accent;
+    min-height: 100vh;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @include txt_default;
+}
+
+h1 {
+  font-size: calc(#{$base_unit} * 4.5); //72
+  font-weight: 200;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+}
+
+h2 {
+  font-size: calc(#{$base_unit} * 2.25); //36
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+h3 {
+  font-size: calc(#{$base_unit} * 1.5); //24
+  text-transform: uppercase;
+  font-weight: 800;
+  color: $theme_primary;
+}
+
+/*.content {
+  padding: 64px $marginH 0;
+}*/
+
+
+//LIGHTBOX
+.lightbox-matte {
+  background: rgba(0,0,0,.5);
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  bottom: 100%;
+  left: 0px;
+  opacity: 0;
+  pointer-events: none;
+  transition: all ease-in-out 300ms;
+  &.active {
+    opacity: 1;
+    bottom: 0px;
+    pointer-events: all;
+  }
+}
+
+@import 'type';
+
+/* YOUTUBE EMBED */
+.video-responsive {
+  overflow: hidden;
+  margin-top: $base_unit;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0;
+  iframe {
+    left: 50%;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    max-width: $article_width;
+    max-height: 393.75px;
+    transform: translateX(-50%);
+    position: absolute;
+  }
+}
+
+@import "footer";
+
+@media only screen and (min-width: 768px) {
+  .cover-page {
+    h1 {
+      font-size: 61px;
+    }
+
+    h2 {
+      font-size: 38px;
+    }
+  }
+  .video-responsive {
+    padding-bottom: 393.75px;
+  }
+}

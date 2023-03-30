@@ -1,5 +1,4 @@
 import React, {useState} from "react";
-import "./Gallery.scss";
 import Lightbox from "./Lightbox";
 
 //NOTE: some styling can be manipulated from App.scss

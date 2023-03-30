@@ -5,12 +5,15 @@ import buildBlock from "../scripts/buildBlock";
 
 function AboutPageTemplate(props) {
   return (
-    <div className="article">
-      <section className="article-content">
-        {about[props.index].content && about[props.index].content.map(buildBlock)}
-      </section>
+    <>
+      <article>
+        <div className="spacer"></div>
+        <section className="article-content">
+          {about[props.index].content && about[props.index].content.map(buildBlock)}
+        </section>
+      </article>
       <Footer />
-    </div>
+    </>
   )
 }
 
