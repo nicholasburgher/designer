@@ -8,18 +8,20 @@
 }
 
 .cover-page {
-//height: calc(100vh - 72px);
-display: grid;
-//grid-template-rows: 6fr 1fr;
-place-items: center;
-background: $theme_accent;
-animation: fadeIn ease-in-out 700ms, dropIn ease-in-out 700ms;
+    //height: calc(100vh - 72px);
+    display: grid;
+    //grid-template-rows: 6fr 1fr;
+    place-items: center;
+    background: $theme_accent;
+    animation: fadeIn ease-in-out 700ms, dropIn ease-in-out 700ms;
+
     .cover {
         background: $theme_primary;
         width: 100%;
         min-height: calc(335px + (#{$marginH} * 2));
         position: relative;
         overflow: hidden;
+
         .centered-group {
             position: absolute;
             bottom: 0;
@@ -27,12 +29,14 @@ animation: fadeIn ease-in-out 700ms, dropIn ease-in-out 700ms;
             width: 450px;
             height: 350px;
             transform: translate(-50%, 0);
+
             &:nth-of-type(2) {
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
             }
         }
+
         .my-name {
             color: white;
             font-weight: 650;
@@ -42,10 +46,12 @@ animation: fadeIn ease-in-out 700ms, dropIn ease-in-out 700ms;
             white-space: nowrap;
             letter-spacing: 0.1em;
         }
+
         .big-letters {
             display: grid;
             place-items: center;
             grid-template-columns: 1fr 1fr 1fr 1fr;
+
             div {
                 color: $bright-orange;
                 font-size: 2rem;
@@ -53,6 +59,7 @@ animation: fadeIn ease-in-out 700ms, dropIn ease-in-out 700ms;
                 font-weight: 300;
             }
         }
+
         .contact-info {
             display: flex;
             justify-content: space-between;
@@ -63,6 +70,7 @@ animation: fadeIn ease-in-out 700ms, dropIn ease-in-out 700ms;
             font-size: 0.77rem;
             letter-spacing: 0.15em;
         }
+
         .ball-1 {
             display: none;
             height: 40vw;
@@ -70,14 +78,15 @@ animation: fadeIn ease-in-out 700ms, dropIn ease-in-out 700ms;
             max-height: 225px;
             max-width: 225px;
             /*background: linear-gradient(to bottom, var(--secondary), var(--dark));*/
-            background-color: #B5401B; /*This is approx 70% opacity of var secondary*/
+            background-color: #B5401B;
+            /*This is approx 70% opacity of var secondary*/
             opacity: 1;
             border-radius: 50%;
             position: absolute;
             right: -75px;
             bottom: -50px;
         }
-    } 
+    }
 
     h1 {
         font-size: 8vw;
@@ -89,5 +98,104 @@ animation: fadeIn ease-in-out 700ms, dropIn ease-in-out 700ms;
         font-size: 5vw;
         white-space: nowrap;
     }
-    
+}
+section.who-i-am, section.what-i-do {
+    padding: 3em 0;
+    h3 {
+        color: $theme_text;
+        font-size: 48px;
+        text-transform: none;
+        margin-bottom: .75em;
+        font-weight: 600
+    }
+}
+
+section.what-i-do {
+
+    >table {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: space-between;
+        gap: 72px;
+        >tbody,
+        >tbody>tr {
+            display: contents;
+
+            >td {
+                //border: solid 1px lightgreen;
+                flex-grow: 1;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 8px;
+
+                table td {
+                    padding: 0 8px;
+                    width: 96px;
+                    //border: solid 1px hotpink;
+                    font-size: 96px;
+                    color: $bright-orange;
+                    font-weight: 300;
+                }
+
+                h4 {
+                    font-weight: 600;
+                    font-size: 24px;
+                    text-transform: uppercase;
+                    letter-spacing: 0.15em;
+                    margin: 0;
+                }
+
+                a {
+                    font-size: 18px;
+                    font-weight: 600;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    height: 38px;
+                    width: 100%;
+                    //background: blue;
+                    gap: 16px;
+                    color: $theme_text;
+                    text-decoration: none;
+                    &::after,
+                    &::before {
+                        content: '';
+                        height: 12px;
+                        width: 12px;
+                        border-top: solid 3px rgba($theme_text, .5);
+                        border-right: solid 3px rgba($theme_text, .5);
+                        transform: rotate(45deg);
+                        position: relative;
+                        left: 0px;
+                        transition: left 300ms ease-in-out;
+                    }
+
+                    &::before {
+                        opacity: 0;
+                    }
+
+                    &:hover {
+                        cursor: pointer;
+
+                        &::after {
+                            left: 5px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: $screen-md-min) {
+    section.who-i-am, section.what-i-do {
+        padding: 5em 0;
+    }
+    section.what-i-do {
+        > table {
+            padding: 0 48px;
+        }
+    }
 }

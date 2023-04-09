@@ -31,7 +31,7 @@ function Footer() {
         </div>
       </div>
       <div className="footer-section">
-        <div>resume upon request</div>
+        <a href="./resume"><div>resume upon request</div></a>
         <div className="copyright">Copyright © {myDate}</div>
       </div>
     </section>

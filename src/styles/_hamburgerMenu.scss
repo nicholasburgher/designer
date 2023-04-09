@@ -25,6 +25,7 @@
       }
       &.active {
         //gap: 9px;
+        .bar {background: rgba($bright-orange, 1);}
         .bar:nth-of-type(2) {
           width: 70%;
         }

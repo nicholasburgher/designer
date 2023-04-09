@@ -7,13 +7,16 @@ import BrandedHeader from "./components/navigation/BrandedHeader";
 import WorkPageTemplate from "./templates/WorkPageTemplate";
 import AboutPageTemplate from "./templates/AboutPageTemplate";
 import work from "./content/work";
+import ResumePageTemplate from "./templates/ResumePageTemplate";
+import ResumeDocument from "./templates/ResumeDocument";
+import allResumes from "./content/resumes/allResumes";
 
 
 function App() {
   return (
     <div className="App">
-      <HamburgerMenu />
-      <BrandedHeader />
+      {window.location.pathname.includes('/resume') ? '' : <><HamburgerMenu /><BrandedHeader /></>}
+      
       <div className="content">
         <Routes>
           <Route path="/" element={<div><CoverPage /><Work /></div>} />
@@ -24,6 +27,11 @@ function App() {
               <Route path={`${workItem.path}`} element={<WorkPageTemplate title={workItem.title} index={index} />} />
             )
           })}
+          <Route path="resume" element={<ResumePageTemplate />}>
+            {allResumes.map((resume) => (
+              <Route path={`${resume.path}`} element={<ResumeDocument resume={resume} />} />
+            ))}
+          </Route>
         </Routes>
       </div>
     </div>
