@@ -6,13 +6,9 @@ import articleAnimationShowcase from "./work-articles/articleAnimationShowcase";
 import articleSignatureBuilder from "./work-articles/articleSignatureBuilder";
 import articleKirkElliott from "./work-articles/articleKirkElliott";
 
-const work = [
+const work_ux = [
   articleKirkElliott,
   articleWispehone,
-  articleBulletins,
-  articleMandyLynn,
-  articleTechAddictionQuiz,
-  articleAnimationShowcase,
-  articleSignatureBuilder
+  articleTechAddictionQuiz
 ]
-export default work;
+export default work_ux;

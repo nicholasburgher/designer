@@ -1,19 +1,18 @@
-import "./Work.scss";
+import "./WorksPage.scss";
 //import BrandedHeader from "./components/navigation/BrandedHeader/BrandedHeader";
 import WorkCard from "./components/WorkCard";
 import PageTitle from "./components/PageTitle";
 import Button from "./components/blocks/Button";
-import work from "./content/work";
 import Footer from "./components/Footer";
 
-function Work() {
+function WorksPage(props) {
   return (
     <div>
       <article style={{maxWidth: "1024px", margin: "0 auto"}}>
         <div className="spacer"></div>
-        <PageTitle content="Work" />
+        <PageTitle content={props.pageTitle} />
         <div className="workTable">
-          {work.map((workItem) => {
+          {props.works.map((workItem) => {
            return (
               <WorkCard key={workItem.key} id={workItem.key} title={workItem.title} skills={workItem.skills} date={workItem.date} to={workItem.path} graphic={workItem.graphic} graphicReposition={workItem.graphicReposition}/>
             )
@@ -34,4 +33,4 @@ function Work() {
   )
 }
 
-export default Work;
+export default WorksPage;
