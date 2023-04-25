@@ -23,6 +23,7 @@ function HamburgerMenu() {
         <NavLink onClick={handleClick} to="/">Home</NavLink>
         <NavLink onClick={handleClick} to="about">About</NavLink>
         <NavLink onClick={handleClick} to="work">Work</NavLink>
+        <NavLink onClick={handleClick} to="resume">Resume</NavLink>
       </div>
     </div>
   );

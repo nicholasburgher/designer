@@ -1,12 +1,15 @@
 
 import { NavLink } from "react-router-dom";
-//import Image from "../blocks/Image";
+import logo from '../../content/resumes/myLogo.png';
 
 function BrandedHeader() {
     return (
         <div class="Header">
             <NavLink to="/">
-                Nicholas Burgher Design Portofolio
+                <span>Nicholas Burgher Design Portfolio</span>
+                <span className="mobile">NB Design Portfolio</span>
+                {/*<img className="logo" src={process.env.PUBLIC_URL + "/assets/images/logos/NB_Designer_Logo.svg" }/>*/}
+                {/*<img className="logo" style={{filter: 'brightness(5)'}} src={logo}/>*/}
             </NavLink>
         </div>
     )

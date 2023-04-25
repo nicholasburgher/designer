@@ -1,8 +1,11 @@
 import React from "react";
+import { useLocation, useNavigate } from "react-router-dom";
 
 function Footer() {
   const myDate = new Date().getFullYear();
   console.log(myDate);
+  const navigate = useNavigate();
+  const location = useLocation();
   return (
     <section className="footer">
       <div className="footer-section">
@@ -31,7 +34,7 @@ function Footer() {
         </div>
       </div>
       <div className="footer-section">
-        <a href="./resume"><div>resume upon request</div></a>
+        {location.pathname.includes("resume") ? '' : <a style={{cursor: 'pointer', textDecoration: 'underline'}} onClick={() => navigate("../resume")}>Download Resume</a>}
         <div className="copyright">Copyright © {myDate}</div>
       </div>
     </section>

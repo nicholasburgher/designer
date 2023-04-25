@@ -1,22 +1,47 @@
-div.button-1 {
+div[class^=button] {
     display: grid;
-    place-items: center;
+    &[class*='-1'] {
+        place-items: center;
+    }
+    &[class*='-2'] {
+        margin-bottom: 1.5rem;
+        place-items: left;
+    }
     button {
         background: $theme_background;
         border: none;
         border-radius: calc(#{$base_unit}/3);
+        box-shadow: 0px 5px 5px $theme_accent;
         color: $theme_accent;
         cursor: pointer;
-        padding: 14px 22px;
-        position: relative;
         font-size: 16px;
         font-weight: 700;
-        box-shadow: 0px 5px 5px $theme_accent;
+        padding: 14px 22px;
+        position: relative;
         top: 2px;
         transition: $standard_transition;
         &:hover {
             box-shadow: 0px 5px 5px $theme_accent_darker;
             top: -2px;
         }
+    }
+}
+
+.btn-group {
+    display: grid;
+    flex-wrap: wrap;
+    gap: 2rem;
+    grid-template-columns: 1fr;
+    justify-content: space-around;
+    > div {
+        * {
+            width: 100%;
+        }
+    }
+}
+
+@media only screen and (min-width: $screen-md-min) {
+    .btn-group {
+        grid-template-columns: 1fr 1fr 1fr;
     }
 }

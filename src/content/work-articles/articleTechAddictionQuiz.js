@@ -204,7 +204,7 @@ const articleTechAddictionQuiz = {
     },
     {
       "component": "Body",
-      "content": "Overall, I was very pleased with the end result. We created a fun, engaging, evergreen marketing piece that's distinct to Techless while spending minimal amounts of money on the development of the tool. If you haven't had a chance, I'd encourage you to try and take the quiz found <a href=\"https://techless.com/pages/tech-addiction-quiz\">here</a>."
+      "content": "Overall, I was very pleased with the end result. We created a fun, engaging, evergreen marketing piece that's distinct to Techless while spending minimal amounts of money on the development of the tool. If you haven't had a chance, I'd encourage you to try and take the quiz found <a href=\"https://techless.com/pages/tech-addiction-quiz\" target=\"_blank\">here</a>."
     },
   ]
 }

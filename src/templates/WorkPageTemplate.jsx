@@ -8,17 +8,18 @@ import BackTo from "../components/navigation/BackTo";
 
 function WorkPageTemplate(props) {
   const navigate = useNavigate();
+  const category = props.category;
   return (
     <>
       <article>
         <div className="spacer"></div>
         <div style={{display: "flex", flexDirection: "row", gap: "8px"}}>
-          <PageTitle content={props.categoryTitle} action={() => {console.log("heading-back"); navigate(`../${props.categoryRoot}`)}}/><PageTitle content={`> ${props.item.title}`} />
+          <PageTitle content={category.categoryTitle} action={() => {console.log("heading-back"); navigate(`../${category.rootPath}`)}}/><PageTitle content={`> ${props.item.title}`} />
         </div>
         <section className="article-content">
           {props.item.content && props.item.content.map(buildBlock)}
         </section>
-        <BackTo />
+        <BackTo dest={category.rootPath} />
       </article>
       <Footer />
     </>

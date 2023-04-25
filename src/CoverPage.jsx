@@ -4,34 +4,35 @@ import buildBlock from "./scripts/buildBlock";
 import coverContent from './content/coverContent';
 
 function WhatIDo() {
+  const navigate = useNavigate();
   const content = [
     {
       letter1: 'G',
       letter2: 'D',
       title: 'Graphic Design',
       linkText: 'Learn More',
-      destination: './'
+      destination: './design-work'
     },
     {
       letter1: 'U',
       letter2: 'X',
       title: 'User Experience',
       linkText: 'Learn More',
-      destination: './'
+      destination: './ux-work'
     },
     {
       letter1: '<',
       letter2: '>',
       title: 'Development',
       linkText: 'Learn More',
-      destination: './'
+      destination: './dev-work'
     },
     {
       letter1: 'A',
       letter2: 'V',
       title: 'Audio / Visual',
       linkText: 'Learn More',
-      destination: './'
+      destination: './av-work'
     }
   ];
   return (
@@ -41,7 +42,7 @@ function WhatIDo() {
         <tbody>
           <tr>
             {content.map((item) => (
-              <td align="center">
+              <td onClick={() => navigate(item.destination)} align="center">
                 <table width="100px">
                   <tbody>
                     <td>
@@ -55,7 +56,7 @@ function WhatIDo() {
                   </tbody>
                 </table>
                 <h4>{item.title}</h4>
-                <a href={item.destination}>{item.linkText}</a>
+                <a onClick={() => navigate(item.destination)}>{item.linkText}</a>
               </td>
             ))}
           </tr>
