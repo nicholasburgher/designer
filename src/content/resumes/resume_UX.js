@@ -18,7 +18,7 @@ const resume_UX = {
     ],
     industryKnowledge: [
         'Figma',
-        'Photophop, Illustrator, InDesign',
+        'Adobe Photophop, Illustrator, InDesign',
         'React JS, Vanilla Javascript',
         'HTML, CSS, SCSS, some PHP',
         'Squarespace, Wordpress, Shopify',
@@ -28,20 +28,23 @@ const resume_UX = {
         {
             ...detailsForAllResumes.tpm,
             details: [
-                'Redesigned texasdepository.com, adding a brand new logged in experience, and resolving previous customer barriers.',
-                'Designed and implemented dozens of elegant icons and other visual assets to be used as a part of user interfaces.',
+                'Established a new site design for the upcoming re-release of texasdepository.com, featuring a brand new logged-in experience, and resolving 10 major customer challenges.',
+                'Designed and implemented dozens of visual assets like icons, buttons, components, and page mockups to be used as a part of the new site. Designed in Figma, built with React JS.',
+                'Collaboarated with lead engineer and business stakeholders to deliver web experiences, including the all new storage.kirkelliottphd.com landing site.',
                 'Grew alongside other developers as we utilized tools like React JS to build groundbreaking web applications.',
-                'Established trust and expertise in design with company leadership by providing quality communication on design direction, and requesting feedback.'
+                'Established trust and expertise in design with company leadership by providing quality communication on design direction, a thorough vision on brand guidelines, and requesting/welcoming continuous feedback.'
             ]
         },
         {
             ...detailsForAllResumes.techless,
             details: [
-                'Created valuable, usable customer experiences for users of Wisephone.',
-                'Generated engaging content to enhance user experiences, such as video demonstrations, tutorials, online tools, and user flows.',
-                'Formalized the UX process for new product needs. 24-page document goes over the practice of product discovery and user research.',
+                'Designed dozens of valuable, usable mobile applications and user experiences for Wisephone and Techless.',
+                'Crafted memorable, on-brand customer interactions that supported business and customer goals.',
+                'Generated engaging, meaningful content to enhance user experiences; such as video demonstrations, tutorials, print materials, and online tools.',
+                'Used Figma to establish visual guidelines for Techless\'s bespoke UI design system, code-named Sofie. Included standards for font styles, colors, and various UI components, used to build new screens and flows for Wisephone.',
+                'Formalized a UX design process for analyzing new product opportunities. The 24-page document covers a wide variety of topics including how to do product discovery and user research.',
                 'Built prototypes, both low and high fidelity, with paper, Figma, coded prototypes (JS and React). Tested interfaces for usability using tools like Maze.co.',
-                'Supported engineers with working code, product testing, and product design documentation.',
+                'Collaboarated with engineers within Jira. Supported sprints by writing demo/working code, compiling thorough product design documentation, and testing pre-production releases.',
                 'Worked across all departments and teams to help identify and understand business problems and evaluate potential solutions. Used techniques such as user research, product testing, and risk assessment.'
             ]
         },
