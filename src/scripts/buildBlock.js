@@ -49,7 +49,14 @@ function buildBlock(item) {
             )
         case "Combination":
             return (
-                <Combination design={item.design} title={item.title} content={item.content} source={item.source} alt={item.alt} caption={item.caption} />
+                <Combination
+                    design={item.design}
+                    title={item.title}
+                    content={item.content}
+                    source={item.source}
+                    alt={item.alt}
+                    caption={item.caption}
+                />
             )
         case "Gallery":
             return (
