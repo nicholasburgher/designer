@@ -112,7 +112,8 @@ const styles = StyleSheet.create({
         flex: 1
     },
     bodyBullet: {
-        fontWeight: 700
+        fontWeight: 700,
+        top: -3
     },
     contentWrapper: {
         display: 'flex',
